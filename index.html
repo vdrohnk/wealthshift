@@ -47,7 +47,8 @@
   .logo-text { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:19px; font-weight:700; color:var(--text); letter-spacing:-0.01em; }
   .logo-text span { color:var(--blue-mid); }
 
-  .nav-pill { font-size:12px; font-weight:500; color:var(--green); background:var(--green-dim); border:1px solid rgba(14,203,129,0.25); padding:5px 14px; border-radius:100px; letter-spacing:0.04em; white-space:nowrap; transition:opacity .35s ease; }
+  .nav-pill { font-size:12px; font-weight:500; color:var(--green); background:var(--green-dim); border:1px solid rgba(14,203,129,0.25); padding:5px 14px; border-radius:100px; letter-spacing:0.04em; white-space:nowrap; min-width:230px; text-align:center; transition:opacity .35s ease; }
+  .nav-pill.fade-out { opacity:0; }
 
   /* LANG SWITCHER */
   .lang-switcher { position:relative; display:flex; align-items:center; margin-left:auto; }
@@ -403,8 +404,8 @@
     .tooltip { width:160px; font-size:10px; }
 
     .phone-section { padding:0 16px; margin-top:20px; }
-    .phone-stage { min-height:720px; padding:30px 0; }
-    .phone-frame { width:280px; height:600px; }
+    .phone-stage { min-height:780px; padding:30px 0; }
+    .phone-frame { width:280px; height:660px; }
     .float-card { padding:9px 11px; }
     .float-card .fc-ico { width:26px; height:26px; }
     .float-card .fc-info { font-size:10px; }
@@ -475,8 +476,8 @@
     .subhead { font-size:14px; }
     .stat-num { font-size:20px; }
     .btn-primary { font-size:15px; padding:15px 20px; }
-    .phone-frame { width:260px; height:560px; }
-    .phone-stage { min-height:680px; }
+    .phone-frame { width:260px; height:640px; }
+    .phone-stage { min-height:760px; }
     .float-1, .float-2 { display:none; }
   }
 </style>
@@ -983,7 +984,7 @@
     <div class="sticky-cta-meta" data-t="stickymeta">10M+ joined</div>
     <div class="sticky-cta-sub" data-t="stickysub">From $10 · 60 sec signup</div>
   </div>
-  <a href="#" class="sticky-cta-btn" data-t="stickycta">Get Started →</a>
+  <a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="sticky-cta-btn" data-t="stickycta">Get Started →</a>
 </div>
 
 <script>
@@ -1178,7 +1179,7 @@ function rotateAnnounce(){
   const order = ['navpill','np2','np3'];
   let i = 0;
   setInterval(() => {
-    el.style.opacity = '0';
+    el.classList.add('fade-out');
     setTimeout(() => {
       i = (i + 1) % order.length;
       const lang = document.documentElement.lang || 'en';
@@ -1187,9 +1188,13 @@ function rotateAnnounce(){
       const key = order[i];
       el.setAttribute('data-t', key);
       el.innerHTML = (t[key] !== undefined ? t[key] : (fb[key] || ''));
-      el.style.opacity = '1';
-    }, 350);
-  }, 4200);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          el.classList.remove('fade-out');
+        });
+      });
+    }, 400);
+  }, 5000);
 }
 
 /* STICKY MOBILE CTA */
