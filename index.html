@@ -47,8 +47,8 @@
   .logo-text { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:19px; font-weight:700; color:var(--text); letter-spacing:-0.01em; }
   .logo-text span { color:var(--blue-mid); }
 
-  .nav-pill { font-size:12px; font-weight:500; color:var(--green); background:var(--green-dim); border:1px solid rgba(14,203,129,0.25); padding:5px 14px; border-radius:100px; letter-spacing:0.04em; white-space:nowrap; min-width:230px; text-align:center; transition:opacity .35s ease; }
-  .nav-pill.fade-out { opacity:0; }
+  .nav-pill { font-size:12px; font-weight:500; color:var(--green); background:var(--green-dim); border:1px solid rgba(14,203,129,0.25); padding:5px 14px; border-radius:100px; letter-spacing:0.04em; white-space:nowrap; min-width:230px; text-align:center; opacity:1; visibility:visible; transition:opacity .3s ease, visibility 0s linear 0s; }
+  .nav-pill.fade-out { opacity:0; visibility:hidden; transition:opacity .3s ease, visibility 0s linear .3s; }
 
   /* LANG SWITCHER */
   .lang-switcher { position:relative; display:flex; align-items:center; margin-left:auto; }
@@ -381,7 +381,7 @@
 
   @media(max-width:600px) {
     nav { padding:0 16px; height:56px; gap:10px; }
-    .nav-pill { font-size:11px; padding:4px 10px; }
+    .nav-pill { display:none; }
     .lang-btn .lang-name { display:none; }
     .lang-btn { padding:7px 10px; }
     .lang-dropdown { right:0; width:calc(100vw - 32px); max-height:60vh; }
@@ -397,9 +397,11 @@
 
     .stats-section { padding:0 16px; }
     .stats-card { grid-template-columns:1fr 1fr; }
-    .stat-item { padding:18px 12px; }
+    .stat-item { padding:18px 12px; border-bottom:1px solid var(--border); }
     .stat-item:nth-child(2) { border-right:none; }
+    .stat-item:nth-child(3), .stat-item:nth-child(4) { border-bottom:none; }
     .stat-num { font-size:22px; }
+    .stat-item.hero .stat-num { font-size:24px; }
     .stat-label { font-size:11px; }
     .tooltip { width:160px; font-size:10px; }
 
@@ -475,6 +477,7 @@
     h1 { font-size:24px; }
     .subhead { font-size:14px; }
     .stat-num { font-size:20px; }
+    .stat-item.hero .stat-num { font-size:22px; }
     .btn-primary { font-size:15px; padding:15px 20px; }
     .phone-frame { width:260px; height:640px; }
     .phone-stage { min-height:760px; }
