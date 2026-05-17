@@ -101,7 +101,7 @@ if (window.location.hash) {
   .stats-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; display:grid; grid-template-columns:repeat(4,1fr); }
   .stat-item { padding:26px 18px; border-right:1px solid var(--border); text-align:center; position:relative; }
   .stat-item:last-child { border-right:none; }
-  .stat-item.hero { background:linear-gradient(180deg,rgba(14,203,129,0.11) 0%,rgba(14,203,129,0.04) 100%); }
+  .stat-item.hero { background:linear-gradient(rgba(14,203,129,0.10),rgba(14,203,129,0.10)) var(--bg2); }
   .stat-item.hero::before { content:''; position:absolute; top:0; left:18%; right:18%; height:2px; background:linear-gradient(90deg,transparent,var(--green),transparent); animation:shimmer 3s ease-in-out infinite; }
   @keyframes shimmer { 0%,100%{opacity:.3} 50%{opacity:1} }
   .stat-num { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:28px; font-weight:700; color:#fff; display:block; line-height:1; margin-bottom:6px; }
