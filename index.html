@@ -147,13 +147,14 @@ if (window.location.hash) {
   .ph-go-earn { margin:0 22px; padding:13px; background:var(--blue); color:#fff; text-align:center; font-weight:600; font-size:14px; border-radius:100px; box-shadow:0 6px 20px rgba(0,67,255,.35); position:relative; }
   .ph-go-earn::before { content:''; display:inline-block; width:7px; height:7px; border-radius:50%; background:#fff; margin-right:8px; vertical-align:middle; animation:pulse 1.6s ease infinite; box-shadow:0 0 0 3px rgba(255,255,255,.2); }
 
-  /* MICRO DROP — +$0.01 popups */
-  .ph-microdrop { position:absolute; right:0; top:18px; color:var(--green); font-size:9px; font-weight:700; pointer-events:none; opacity:0; animation:microdrop 5.5s ease-in-out infinite; }
-  @keyframes microdrop {
-    0%, 12% { opacity:0; transform:translateY(8px); }
-    22% { opacity:1; transform:translateY(0); }
-    55% { opacity:.9; transform:translateY(-10px); }
-    72%, 100% { opacity:0; transform:translateY(-22px); }
+  /* MICRO DROP — +$0.01 pill that pops up synced with accrued tick */
+  .ph-microdrop { position:absolute; right:6px; top:14px; padding:2px 7px; color:var(--green); background:rgba(14,203,129,0.12); border:1px solid rgba(14,203,129,0.35); border-radius:6px; font-size:10px; font-weight:700; pointer-events:none; opacity:0; z-index:5; white-space:nowrap; }
+  .ph-microdrop.show { animation:microdropAnim 1.9s cubic-bezier(.22,.61,.36,1); }
+  @keyframes microdropAnim {
+    0% { opacity:0; transform:translateY(14px) scale(.7); }
+    18% { opacity:1; transform:translateY(0) scale(1); }
+    70% { opacity:.85; transform:translateY(-18px) scale(1); }
+    100% { opacity:0; transform:translateY(-32px) scale(.9); }
   }
 
   /* PRODUCTS GRID */
@@ -422,6 +423,7 @@ if (window.location.hash) {
     .stat-item:nth-child(3), .stat-item:nth-child(4) { border-top:1px solid var(--border); }
     .stat-num { font-size:22px; white-space:nowrap !important; }
     .stat-item.hero .stat-num { font-size:22px !important; text-shadow:none !important; white-space:nowrap !important; }
+    .stat-info, .tooltip { display:none !important; }
   }
 
   @media(max-width:600px) {
@@ -448,7 +450,7 @@ if (window.location.hash) {
     .stat-num { font-size:20px; white-space:nowrap; }
     .stat-item.hero .stat-num { font-size:20px; text-shadow:none; }
     .stat-label { font-size:11px; }
-    .tooltip { width:160px; font-size:10px; }
+    .stat-info, .tooltip { display:none !important; }
 
     .phone-section { padding:0 16px; margin-top:20px; }
     .phone-stage { display:grid; grid-template-columns:1fr 1fr 1fr; grid-template-rows:auto auto; column-gap:8px; row-gap:18px; min-height:auto; padding:20px 0 24px; }
@@ -504,7 +506,7 @@ if (window.location.hash) {
     .cta-section p { font-size:14px; margin-bottom:24px; }
 
     .trust-bar { padding:20px 16px; }
-    .trust-row { gap:10px 20px; justify-content:flex-start; }
+    .trust-row { gap:10px 18px; justify-content:center; }
     .t-item { font-size:12px; }
 
     .social-bar { padding:22px 16px; gap:12px; }
@@ -618,13 +620,13 @@ if (window.location.hash) {
       <div class="fc-ico green">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
       </div>
-      <div class="fc-info"><strong>+$<span id="float1Num">3.39</span></strong><span data-t="float1">today</span></div>
+      <div class="fc-info"><strong>+$<span id="float1Num">50.24</span></strong><span data-t="float1">today</span></div>
     </div>
     <div class="float-card float-2">
       <div class="fc-ico green">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
       </div>
-      <div class="fc-info"><strong>+$<span id="float2Num">33.88</span></strong><span data-t="float2">last 10 days</span></div>
+      <div class="fc-info"><strong>+$<span id="float2Num">502.40</span></strong><span data-t="float2">last 10 days</span></div>
     </div>
     <div class="float-card float-3">
       <div class="fc-ico">
@@ -658,18 +660,18 @@ if (window.location.hash) {
             <span data-t="phequity">Total Equity</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </div>
-          <div class="ph-equity-num">$<span id="phEquityNum">8,247.83</span></div>
-          <div class="ph-equity-sub">≈ 0.0823 BTC ▼</div>
+          <div class="ph-equity-num">$<span id="phEquityNum">122,247.83</span></div>
+          <div class="ph-equity-sub">≈ 1.2225 BTC ▼</div>
         </div>
         <div class="ph-interest">
           <div class="ph-interest-item" style="position:relative;">
             <div class="ilbl" data-t="phaccrued">Interest Accrued</div>
-            <div class="ival"><span class="green">+$<span id="phAccruedNum">3.39</span></span> <span style="font-size:11px;color:rgba(255,255,255,.45);font-weight:500;">USD</span></div>
+            <div class="ival"><span class="green">+$<span id="phAccruedNum">50.24</span></span> <span style="font-size:11px;color:rgba(255,255,255,.45);font-weight:500;">USD</span></div>
             <div class="ph-microdrop">+$0.01</div>
           </div>
           <div class="ph-interest-item">
             <div class="ilbl" data-t="phyday">Yesterday's Interest</div>
-            <div class="ival">$3.36 <span style="font-size:11px;color:rgba(255,255,255,.45);font-weight:500;">USD</span></div>
+            <div class="ival">$50.10 <span style="font-size:11px;color:rgba(255,255,255,.45);font-weight:500;">USD</span></div>
           </div>
         </div>
         <div class="ph-go-earn" data-t="phgoearn">Go to Earn</div>
@@ -1142,29 +1144,37 @@ function initLang(){
   if (opt) setLang(opt);
 }
 
-/* PHONE BALANCE ANIMATION */
+/* PHONE BALANCE ANIMATION — synced ticks with micro-drop visual */
 function animatePhoneBalance(){
   const equityEl = document.getElementById('phEquityNum');
   const accruedEl = document.getElementById('phAccruedNum');
   const float1El = document.getElementById('float1Num');
   const float2El = document.getElementById('float2Num');
+  const dropEl = document.querySelector('.ph-microdrop');
   if (!equityEl) return;
 
-  let equity = 8247.83;
-  let accrued = 3.39;
-  let tenDay = 33.88;
+  // Balance ~$122K at 15% APY: today ~$50.24, 10-day ~$502.40
+  let equity = 122247.83;
+  let accrued = 50.24;
+  let tenDay = 502.40;
   setInterval(() => {
-    // simulate ~$3.39/day yield on ~$8.2K at 15% APY, broken into visible ticks
-    equity += 0.02;
+    equity += 0.05;
     accrued += 0.01;
-    tenDay += 0.02;
-    if (accrued > 3.99) accrued = 3.39;
-    if (tenDay > 33.99) tenDay = 33.88;
+    tenDay += 0.10;
+    if (accrued > 50.99) accrued = 50.24;
+    if (tenDay > 510.99) tenDay = 502.40;
     equityEl.textContent = equity.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
     accruedEl.textContent = accrued.toFixed(2);
     if (float1El) float1El.textContent = accrued.toFixed(2);
     if (float2El) float2El.textContent = tenDay.toFixed(2);
-  }, 700);
+
+    // Trigger +$0.01 micro-drop visually synced with this tick
+    if (dropEl) {
+      dropEl.classList.remove('show');
+      void dropEl.offsetWidth; // force restart of animation
+      dropEl.classList.add('show');
+    }
+  }, 2800); // 2.8s tick — clear, slow pulse for synced visual
 }
 
 /* STATS COUNTER ANIMATION */
@@ -1247,19 +1257,19 @@ function toggleFaq(btn){
 
 /* TYPEWRITER — cycling phrases on H1 accent */
 const TYPED_PHRASES = {
-  en: ['do nothing about it', 'wait for the bank', 'watch it shrink', 'let inflation eat it'],
-  ru: ['ничего не делаете', 'ждёте от банка', 'смотрите как они тают', 'инфляция их съедает'],
-  uk: ['нічого не робите', 'чекаєте від банку', 'дивитеся як вони тануть', 'інфляція їх з\'їдає'],
-  es: ['no haces nada', 'esperas al banco', 'lo ves desaparecer', 'la inflación lo devora'],
-  pt: ['não faz nada', 'espera pelo banco', 'vê desaparecer', 'a inflação devora'],
-  de: ['nichts tun', 'auf die Bank warten', 'es schrumpfen sehen', 'die Inflation frisst es'],
-  fr: ['ne faites rien', 'attendez la banque', 'le voyez fondre', 'l\'inflation le ronge'],
-  tr: ['hiçbir şey yapmıyor', 'bankayı bekliyor', 'eridiğini görüyor', 'enflasyon yiyor'],
-  ar: ['لا تفعل شيئاً', 'تنتظر البنك', 'تشاهده يتقلص', 'يأكله التضخم'],
-  zh: ['什么都不做', '等待银行', '看着它缩水', '让通胀吃掉'],
-  ja: ['何もしない', '銀行を待つ', '減るのを見る', 'インフレに食われる'],
-  vi: ['không làm gì cả', 'chờ ngân hàng', 'nhìn nó co lại', 'lạm phát ăn mòn'],
-  id: ['tidak melakukan apa-apa', 'menunggu bank', 'melihatnya menyusut', 'inflasi memakannya']
+  en: ['do nothing about it', 'trust the bank', 'watch it shrink', 'miss opportunities'],
+  ru: ['ничего не делаете', 'верите банку', 'смотрите как они тают', 'упускаете возможности'],
+  uk: ['нічого не робите', 'довіряєте банку', 'дивитеся як вони тануть', 'упускаєте можливості'],
+  es: ['no haces nada', 'confías en el banco', 'lo ves desaparecer', 'pierdes oportunidades'],
+  pt: ['não faz nada', 'confia no banco', 'vê desaparecer', 'perde oportunidades'],
+  de: ['nichts tun', 'der Bank vertrauen', 'es schrumpfen sehen', 'Chancen verpassen'],
+  fr: ['ne faites rien', 'faites confiance à la banque', 'le voyez fondre', 'manquez des occasions'],
+  tr: ['hiçbir şey yapmıyorsunuz', 'bankaya güveniyorsunuz', 'eridiğini izliyorsunuz', 'fırsatları kaçırıyorsunuz'],
+  ar: ['لا تفعل شيئاً', 'تثق بالبنك', 'تشاهده يتقلص', 'تفوّت الفرص'],
+  zh: ['什么都不做', '信任银行', '看着它缩水', '错过机会'],
+  ja: ['何もしない', '銀行を信じる', '減るのを見る', '機会を逃す'],
+  vi: ['không làm gì cả', 'tin tưởng ngân hàng', 'nhìn nó co lại', 'bỏ lỡ cơ hội'],
+  id: ['tidak melakukan apa-apa', 'percaya pada bank', 'melihatnya menyusut', 'melewatkan peluang']
 };
 let typeTimer = null;
 let typeCharIdx = 0;
