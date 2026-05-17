@@ -101,11 +101,7 @@ if (window.location.hash) {
   .stats-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; display:grid; grid-template-columns:repeat(4,1fr); }
   .stat-item { padding:26px 18px; border-right:1px solid var(--border); text-align:center; position:relative; }
   .stat-item:last-child { border-right:none; }
-  .stat-item.hero { background:linear-gradient(180deg,rgba(14,203,129,0.06) 0%,transparent 100%); }
-  .stat-item.hero::before { content:''; position:absolute; top:0; left:14%; right:14%; height:2px; background:linear-gradient(90deg,transparent,var(--green),transparent); animation:shimmer 3s ease-in-out infinite; }
-  @keyframes shimmer { 0%,100%{opacity:.25} 50%{opacity:1} }
   .stat-num { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:28px; font-weight:700; color:#fff; display:block; line-height:1; margin-bottom:6px; }
-  .stat-item.hero .stat-num { font-size:34px; text-shadow:0 0 24px rgba(14,203,129,0.25); }
   .stat-num.green { color:var(--green); } .stat-num.blue { color:var(--blue-mid); }
   .stat-label { font-size:12px; color:var(--muted); line-height:1.4; }
   .stat-info { position:absolute; top:8px; right:8px; width:14px; height:14px; color:var(--muted); opacity:.4; cursor:help; }
@@ -421,9 +417,8 @@ if (window.location.hash) {
     .stat-item { padding:20px 12px; text-align:center; border-right:1px solid var(--border); border-bottom:1px solid var(--border); background:none !important; }
     .stat-item:nth-child(2n) { border-right:none; }
     .stat-item:nth-child(n+3) { border-bottom:none; }
-    .stat-item.hero::before { display:none !important; }
     .stat-num { font-size:22px; white-space:nowrap !important; }
-    .stat-item.hero .stat-num { font-size:22px !important; text-shadow:none !important; white-space:nowrap !important; color:var(--green) !important; }
+    .stat-item.hero .stat-num { color:var(--green) !important; }
     .stat-info, .tooltip { display:none !important; }
   }
 
