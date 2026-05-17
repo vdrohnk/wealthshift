@@ -84,7 +84,7 @@ if (window.location.hash) {
   .hook-badge { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--blue-mid); background:var(--blue-dim); border:1px solid var(--border-b); padding:7px 18px; border-radius:100px; margin-bottom:36px; animation:fadeUp .5s ease both; }
   .hook-dot { width:6px; height:6px; border-radius:50%; background:var(--green); animation:pulse 2s ease infinite; }
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.7)} }
-  h1 { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:clamp(30px,5.5vw,56px); font-weight:800; line-height:1.1; letter-spacing:-.03em; color:#fff; margin-bottom:24px; animation:fadeUp .5s ease .1s both; min-height:4.7em; }
+  h1 { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:clamp(30px,5.5vw,56px); font-weight:800; line-height:1.1; letter-spacing:-.03em; color:#fff; margin-bottom:24px; animation:fadeUp .5s ease .1s both; }
   h1 .accent { color:var(--blue-mid); position:relative; display:inline-block; }
   h1 .accent::after { content:''; display:inline-block; width:2px; height:0.9em; background:var(--blue-mid); margin-left:4px; vertical-align:baseline; animation:cursorBlink 1s steps(2) infinite; transform:translateY(2px); }
   @keyframes cursorBlink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
@@ -1257,19 +1257,19 @@ function toggleFaq(btn){
 
 /* TYPEWRITER — cycling phrases on H1 accent */
 const TYPED_PHRASES = {
-  en: ['do nothing about it', 'trust the bank', 'watch it shrink', 'miss opportunities'],
-  ru: ['ничего не делаете', 'верите банку', 'смотрите как они тают', 'упускаете возможности'],
-  uk: ['нічого не робите', 'довіряєте банку', 'дивитеся як вони тануть', 'упускаєте можливості'],
-  es: ['no haces nada', 'confías en el banco', 'lo ves desaparecer', 'pierdes oportunidades'],
-  pt: ['não faz nada', 'confia no banco', 'vê desaparecer', 'perde oportunidades'],
-  de: ['nichts tun', 'der Bank vertrauen', 'es schrumpfen sehen', 'Chancen verpassen'],
-  fr: ['ne faites rien', 'faites confiance à la banque', 'le voyez fondre', 'manquez des occasions'],
-  tr: ['hiçbir şey yapmıyorsunuz', 'bankaya güveniyorsunuz', 'eridiğini izliyorsunuz', 'fırsatları kaçırıyorsunuz'],
-  ar: ['لا تفعل شيئاً', 'تثق بالبنك', 'تشاهده يتقلص', 'تفوّت الفرص'],
-  zh: ['什么都不做', '信任银行', '看着它缩水', '错过机会'],
-  ja: ['何もしない', '銀行を信じる', '減るのを見る', '機会を逃す'],
-  vi: ['không làm gì cả', 'tin tưởng ngân hàng', 'nhìn nó co lại', 'bỏ lỡ cơ hội'],
-  id: ['tidak melakukan apa-apa', 'percaya pada bank', 'melihatnya menyusut', 'melewatkan peluang']
+  en: ['do nothing', 'trust the bank', 'watch it sink', 'miss chances'],
+  ru: ['просто ждёте', 'верите банку', 'теряете деньги', 'упускаете шанс'],
+  uk: ['просто чекаєте', 'вірите банку', 'втрачаєте час', 'упускаєте шанс'],
+  es: ['no haces nada', 'esperas más', 'pierdes valor', 'pierdes opción'],
+  pt: ['não faz nada', 'confia no banco', 'perde valor', 'perde chance'],
+  de: ['nichts tun', 'Bank vertrauen', 'Geld verlieren', 'Chance verpasst'],
+  fr: ['ne faites rien', 'perdez du temps', 'perdez l\'argent', 'manquez tout'],
+  tr: ['yapmıyorsunuz', 'güveniyorsunuz', 'izliyorsunuz', 'kaçırıyorsunuz'],
+  ar: ['لا تفعل شيئاً', 'تثق بالبنك', 'تخسر يومياً', 'تفوّت الفرص'],
+  zh: ['什么都不做', '信任银行', '每天损失', '错过机会'],
+  ja: ['何もしない', '銀行を信じる', '毎日損失', '機会を逃す'],
+  vi: ['không làm gì', 'tin ngân hàng', 'mất từng ngày', 'bỏ lỡ cơ hội'],
+  id: ['tidak berbuat', 'percaya bank', 'rugi harian', 'lewatkan saja']
 };
 let typeTimer = null;
 let typeCharIdx = 0;
