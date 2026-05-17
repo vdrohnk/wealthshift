@@ -102,7 +102,7 @@ if (window.location.hash) {
   .stats-card { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; background:transparent; border:none; }
   .stat-item { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:28px 16px; text-align:center; display:flex; flex-direction:column; justify-content:center; align-items:center; min-height:140px; transition:transform .2s ease, border-color .2s ease; position:relative; box-sizing:border-box; }
   .stat-item:hover { transform:translateY(-3px); border-color:var(--border-b); }
-  .stat-item.hero { border-color:rgba(14,203,129,0.35); background:linear-gradient(rgba(14,203,129,0.07),rgba(14,203,129,0.07)) var(--bg2); }
+  .stat-item.hero { border-color:rgba(14,203,129,0.35); background:#142823; }
   .stat-item.hero:hover { border-color:rgba(14,203,129,0.55); }
   .stat-num { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:30px; font-weight:700; color:#fff; line-height:1; margin-bottom:8px; }
   .stat-num.green { color:var(--green); } .stat-num.blue { color:var(--blue-mid); }
@@ -415,9 +415,9 @@ if (window.location.hash) {
     .float-1 { top:30px; left:-10px; }
     .float-2 { bottom:40px; right:-10px; }
     .float-3 { top:160px; right:-20px; }
-    /* Stats on mobile — 2x2 grid, all 4 cards visible at once */
-    .stats-card { grid-template-columns:1fr 1fr; gap:10px; }
-    .stat-item { padding:22px 14px; min-height:130px; }
+    /* Stats on mobile — 2x2 grid, forced equal width columns */
+    .stats-card { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px; }
+    .stat-item { padding:22px 12px; min-height:130px; width:100%; overflow:hidden; }
     .stat-num { font-size:24px; white-space:nowrap; margin-bottom:6px; }
     .stat-label { font-size:11px; line-height:1.35; }
   }
