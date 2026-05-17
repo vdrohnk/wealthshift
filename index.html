@@ -416,12 +416,12 @@ if (window.location.hash) {
     .float-1 { top:30px; left:-10px; }
     .float-2 { bottom:40px; right:-10px; }
     .float-3 { top:160px; right:-20px; }
-    /* Stats card — 2x2 grid with subtle dividers, hero green stacks on solid dark bg */
+    /* Stats card — 2x2 grid with visible dividers + uniform green fill on hero */
     .stats-card { grid-template-columns:1fr 1fr; border:1px solid var(--border); overflow:hidden; border-radius:12px; background:var(--bg2); }
-    .stat-item { background:var(--bg2); padding:22px 10px; text-align:center; border:none; border-right:1px solid rgba(255,255,255,0.05); border-bottom:1px solid rgba(255,255,255,0.05); min-height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative; }
+    .stat-item { background:var(--bg2); padding:22px 10px; text-align:center; border:none; border-right:1px solid var(--border); border-bottom:1px solid var(--border); min-height:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative; }
     .stat-item:nth-child(2n) { border-right:none; }
     .stat-item:nth-child(n+3) { border-bottom:none; }
-    .stat-item.hero { background:linear-gradient(180deg,rgba(14,203,129,0.14) 0%,rgba(14,203,129,0.06) 100%),var(--bg2) !important; }
+    .stat-item.hero { background:linear-gradient(rgba(14,203,129,0.11),rgba(14,203,129,0.11)) var(--bg2) !important; }
     .stat-num { font-size:24px; white-space:nowrap !important; margin-bottom:8px; }
     .stat-item.hero .stat-num { color:var(--green) !important; text-shadow:0 0 16px rgba(14,203,129,0.25) !important; }
     .stat-label { font-size:12px; line-height:1.4; }
