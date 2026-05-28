@@ -449,8 +449,8 @@ if (window.location.hash) {
     .lang-btn { padding:7px 10px; }
     .lang-dropdown { right:0; width:calc(100vw - 32px); max-height:60vh; }
     .hero { padding:48px 20px 36px; }
-    h1 { font-size:clamp(26px,7vw,40px); letter-spacing:-0.02em; }
-    .subhead { font-size:15px; margin-bottom:32px; }
+    h1 { font-size:clamp(32px,8.5vw,44px); letter-spacing:-0.02em; line-height:1.08; }
+    .subhead { font-size:14px; margin-bottom:32px; line-height:1.55; }
     .hook-badge { font-size:11px; padding:6px 14px; margin-bottom:28px; }
     .cta-group { flex-direction:column; align-items:stretch; gap:12px; }
     .btn-primary { padding:16px 28px; font-size:16px; justify-content:center; border-radius:10px; }
@@ -515,8 +515,8 @@ if (window.location.hash) {
     body { padding-bottom:72px; }
   }
   @media(max-width:390px) {
-    h1 { font-size:24px; }
-    .subhead { font-size:14px; }
+    h1 { font-size:30px; }
+    .subhead { font-size:13px; }
     .stat-num { font-size:20px; }
     .stat-item { padding:18px 10px; min-height:112px; }
     .btn-primary { font-size:15px; padding:15px 20px; }
@@ -1105,11 +1105,8 @@ function setLang(el){
 function updateURL(code){
   try {
     const url = new URL(window.location);
-    if (code && code !== 'en') {
-      url.searchParams.set('lang', code);
-    } else {
-      url.searchParams.delete('lang');
-    }
+    /* Always include ?lang=XX — keeps URL consistent on all languages including EN */
+    if (code) url.searchParams.set('lang', code);
     history.replaceState(null, '', url);
   } catch(e) {}
 }
@@ -1135,7 +1132,11 @@ function detectLang(){
 }
 function initLang(){
   const code = detectLang();
-  if (code === 'en') return;
+  if (code === 'en') {
+    /* For EN: just ensure URL has ?lang=en so links stay consistent across languages */
+    updateURL('en');
+    return;
+  }
   const opt = document.querySelector('.lang-option[data-code="'+code+'"]');
   if (opt) setLang(opt);
 }
