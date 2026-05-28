@@ -9,6 +9,26 @@
 <meta name="color-scheme" content="dark">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230043FF'/><path d='M16 5L26 10V20L16 25L6 20V10L16 5Z' fill='white' opacity='0.9'/><path d='M16 11L21 13.5V18.5L16 21L11 18.5V13.5L16 11Z' fill='%230043FF'/></svg>">
 <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230043FF'/><path d='M16 5L26 10V20L16 25L6 20V10L16 5Z' fill='white' opacity='0.9'/><path d='M16 11L21 13.5V18.5L16 21L11 18.5V13.5L16 11Z' fill='%230043FF'/></svg>">
+
+<!-- ===== META PIXEL CODE ===== -->
+<!-- Pixel ID: 1471285617248432 -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1471285617248432');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1471285617248432&ev=PageView&noscript=1"
+/></noscript>
+<!-- ===== END META PIXEL CODE ===== -->
+
 <script>
 document.documentElement.classList.add('js');
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
@@ -47,26 +67,20 @@ if (window.location.hash) {
     100% { transform:translate3d(2%,-2%,0) scale(1.02); }
   }
   .glow { position:fixed; top:-220px; left:50%; transform:translateX(-50%); width:1100px; height:760px; background:radial-gradient(ellipse at 50% 30%,rgba(27,106,255,0.14) 0%,transparent 62%); pointer-events:none; z-index:0; filter:blur(2px); }
-
-  /* NAV */
   nav { position:relative; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:0 40px; height:60px; border-bottom:1px solid var(--border); background:rgba(11,14,17,0.9); backdrop-filter:blur(14px); gap:16px; }
   .logo { display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0; }
   .logo-icon { width:30px; height:30px; background:var(--blue); border-radius:7px; display:flex; align-items:center; justify-content:center; }
   .logo-icon svg { width:17px; height:17px; }
   .logo-text { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:19px; font-weight:700; color:var(--text); letter-spacing:-0.01em; }
   .logo-text span { color:var(--blue-mid); }
-
   .nav-pill { display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:500; color:var(--green); background:var(--green-dim); border:1px solid rgba(14,203,129,0.25); padding:5px 14px; border-radius:100px; letter-spacing:0.04em; white-space:nowrap; }
   .nav-pill::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--green); animation:pulse 2s ease infinite; }
-
-  /* LANG SWITCHER */
   .lang-switcher { position:relative; display:flex; align-items:center; margin-left:auto; }
   .lang-btn { display:flex; align-items:center; gap:7px; background:transparent; border:1px solid var(--border); border-radius:7px; padding:7px 13px; color:var(--text); font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif; font-size:13px; font-weight:500; cursor:pointer; transition:border-color .2s,background .2s; white-space:nowrap; }
   .lang-btn:hover { border-color:var(--border-b); background:var(--blue-dim); }
   .lang-btn .globe { width:15px; height:15px; opacity:.7; }
   .lang-btn .chev { width:12px; height:12px; opacity:.5; transition:transform .2s; }
   .lang-switcher.open .chev { transform:rotate(180deg); }
-
   .lang-dropdown { display:none; position:absolute; top:calc(100% + 8px); right:0; width:270px; max-height:420px; overflow-y:auto; background:var(--bg2); border:1px solid var(--border); border-radius:10px; box-shadow:0 16px 48px rgba(0,0,0,.5); z-index:200; scrollbar-width:thin; scrollbar-color:var(--border) transparent; }
   .lang-switcher.open .lang-dropdown { display:block; }
   .lang-dropdown::-webkit-scrollbar { width:4px; }
@@ -78,8 +92,6 @@ if (window.location.hash) {
   .lang-option .ck { width:14px; height:14px; color:var(--blue-mid); opacity:0; flex-shrink:0; }
   .lang-option.active .ck { opacity:1; }
   .lang-divider { height:1px; background:var(--border); margin:4px 0; }
-
-  /* HERO */
   .hero { position:relative; z-index:1; max-width:800px; margin:0 auto; padding:90px 24px 60px; text-align:center; }
   .hook-badge { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--blue-mid); background:var(--blue-dim); border:1px solid var(--border-b); padding:7px 18px; border-radius:100px; margin-bottom:36px; animation:fadeUp .5s ease both; }
   .hook-dot { width:6px; height:6px; border-radius:50%; background:var(--green); animation:pulse 2s ease infinite; }
@@ -95,10 +107,7 @@ if (window.location.hash) {
   .btn-secondary { display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--text); font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif; font-size:15px; font-weight:500; padding:15px 26px; border-radius:8px; border:1px solid var(--border); cursor:pointer; text-decoration:none; transition:border-color .2s,background .2s; }
   .btn-secondary:hover { border-color:var(--border-b); background:var(--blue-dim); }
   .cta-hint { font-size:12px; color:var(--muted); margin-top:16px; animation:fadeUp .5s ease .35s both; }
-
-  /* STATS */
   .stats-section { position:relative; z-index:1; max-width:860px; margin:0 auto; padding:0 24px; }
-  /* STATS — clean rebuild: 4 identical rounded cards in grid with gap. Hero differs only by border + text color. */
   .stats-card { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; background:transparent; border:none; }
   .stat-item { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:28px 16px; text-align:center; display:flex; flex-direction:column; justify-content:center; align-items:center; min-height:140px; transition:transform .2s ease, border-color .2s ease; position:relative; box-sizing:border-box; }
   .stat-item:hover { transform:translateY(-3px); border-color:var(--border-b); }
@@ -111,8 +120,6 @@ if (window.location.hash) {
   .tooltip { position:absolute; bottom:calc(100% + 6px); right:0; top:auto; background:var(--bg3); border:1px solid var(--border-b); border-radius:8px; padding:10px 12px; font-size:11px; color:var(--text); width:220px; line-height:1.45; opacity:0; pointer-events:none; transition:opacity .2s; z-index:20; text-align:left; box-shadow:0 12px 28px rgba(0,0,0,.5); }
   .tooltip::after { content:''; position:absolute; bottom:-5px; right:10px; width:10px; height:10px; background:var(--bg3); border-right:1px solid var(--border-b); border-bottom:1px solid var(--border-b); transform:rotate(45deg); }
   .stat-item:hover .tooltip { opacity:1; }
-
-  /* PHONE MOCKUP — MEXC EARN STYLE */
   .phone-section { position:relative; z-index:1; max-width:920px; margin:30px auto 0; padding:0 24px; animation:fadeUp .7s ease .45s both; }
   .phone-stage { position:relative; display:flex; justify-content:center; align-items:center; padding:20px 0; min-height:700px; }
   .phone-frame { position:relative; width:300px; height:640px; background:#000; border:8px solid #1a1f28; border-radius:42px; box-shadow:0 30px 80px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.04); overflow:hidden; z-index:2; }
@@ -120,33 +127,23 @@ if (window.location.hash) {
   .phone-screen { position:absolute; inset:0; background:#000; display:flex; flex-direction:column; overflow:hidden; }
   .ph-status { display:flex; justify-content:space-between; align-items:center; padding:9px 22px 4px; font-size:11px; color:#fff; font-weight:600; padding-top:8px; }
   .ph-status-right { display:flex; gap:5px; align-items:center; font-size:9px; }
-
-  /* TOP TABS */
   .ph-tabs { display:flex; align-items:center; gap:14px; padding:10px 18px 8px; overflow:hidden; font-size:13px; font-weight:600; }
   .ph-tab-item { color:rgba(255,255,255,.35); white-space:nowrap; font-weight:600; flex-shrink:0; }
   .ph-tab-item.active { color:#fff; font-weight:700; }
   .ph-burger { margin-left:auto; color:rgba(255,255,255,.5); display:flex; flex-direction:column; gap:2px; justify-content:center; flex-shrink:0; }
   .ph-burger span { display:block; width:14px; height:1.5px; background:currentColor; }
-
-  /* EQUITY */
   .ph-equity-wrap { padding:14px 22px 0; }
   .ph-equity-label { display:flex; align-items:center; gap:6px; font-size:11px; color:rgba(255,255,255,.55); }
   .ph-equity-label svg { width:13px; height:13px; opacity:.7; }
   .ph-equity-num { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:28px; font-weight:800; color:#fff; line-height:1; letter-spacing:-.02em; padding:6px 0 0; display:flex; align-items:baseline; gap:6px; }
   .ph-equity-cur { font-size:11px; font-weight:600; color:rgba(255,255,255,.5); }
   .ph-equity-sub { font-size:12px; color:rgba(255,255,255,.55); padding:4px 0 16px; }
-
-  /* INTEREST GRID */
   .ph-interest { display:grid; grid-template-columns:1fr 1fr; gap:14px; padding:0 22px 14px; }
   .ph-interest-item .ilbl { font-size:11px; color:rgba(255,255,255,.5); padding-bottom:4px; }
   .ph-interest-item .ival { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:15px; font-weight:700; color:#fff; }
   .ph-interest-item .ival .green { color:var(--green); }
-
-  /* GO TO EARN */
   .ph-go-earn { margin:0 22px; padding:13px; background:var(--blue); color:#fff; text-align:center; font-weight:600; font-size:14px; border-radius:100px; box-shadow:0 6px 20px rgba(0,67,255,.35); position:relative; }
   .ph-go-earn::before { content:''; display:inline-block; width:7px; height:7px; border-radius:50%; background:#fff; margin-right:8px; vertical-align:middle; animation:pulse 1.6s ease infinite; box-shadow:0 0 0 3px rgba(255,255,255,.2); }
-
-  /* MICRO DROP — +$0.01 pill that pops up synced with accrued tick */
   .ph-microdrop { position:absolute; right:6px; top:14px; padding:2px 7px; color:var(--green); background:rgba(14,203,129,0.12); border:1px solid rgba(14,203,129,0.35); border-radius:6px; font-size:10px; font-weight:700; pointer-events:none; opacity:0; z-index:5; white-space:nowrap; }
   .ph-microdrop.show { animation:microdropAnim 1.9s cubic-bezier(.22,.61,.36,1); }
   @keyframes microdropAnim {
@@ -155,23 +152,17 @@ if (window.location.hash) {
     70% { opacity:.85; transform:translateY(-18px) scale(1); }
     100% { opacity:0; transform:translateY(-32px) scale(.9); }
   }
-
-  /* PRODUCTS GRID */
   .ph-products { display:grid; grid-template-columns:repeat(4,1fr); gap:4px; padding:18px 14px 6px; }
   .ph-product { text-align:center; }
   .ph-product-ico { width:46px; height:46px; margin:0 auto 6px; background:#11151c; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#fff; }
   .ph-product-ico svg { width:22px; height:22px; }
   .ph-product-lbl { font-size:9px; color:rgba(255,255,255,.75); font-weight:500; line-height:1.2; }
-
-  /* PROMO BANNER */
   .ph-promo { margin:8px 14px 0; background:#11151c; border:1px solid rgba(255,255,255,.04); border-radius:12px; padding:12px 14px; display:flex; align-items:center; justify-content:space-between; gap:10px; }
   .ph-promo-text { flex:1; }
   .ph-promo-title { font-size:12px; font-weight:700; color:#fff; line-height:1.3; }
   .ph-promo-title b { color:var(--blue-mid); }
   .ph-promo-sub { font-size:10px; color:rgba(255,255,255,.5); margin-top:2px; }
   .ph-promo-btn { background:rgba(255,255,255,.1); border-radius:100px; padding:6px 14px; font-size:11px; font-weight:600; color:#fff; flex-shrink:0; }
-
-  /* RECOMMENDED */
   .ph-rec { padding:14px 22px 6px; }
   .ph-rec-title { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:16px; font-weight:800; color:#fff; padding-bottom:4px; }
   .ph-rec-sub { font-size:9px; color:rgba(255,255,255,.4); line-height:1.4; padding-bottom:8px; }
@@ -184,14 +175,10 @@ if (window.location.hash) {
   .ph-rec-days { font-size:10px; color:rgba(255,255,255,.4); }
   .ph-rec-apr { font-size:13px; font-weight:700; color:#fff; }
   .ph-rec-apr::after { content:' ›'; color:rgba(255,255,255,.4); margin-left:2px; }
-
-  /* BOTTOM NAV */
   .ph-bottom-nav { margin-top:auto; display:grid; grid-template-columns:repeat(5,1fr); padding:6px 4px 10px; background:#000; border-top:1px solid rgba(255,255,255,.05); }
   .ph-nav-tab { text-align:center; padding:4px; color:rgba(255,255,255,.4); font-size:9px; font-weight:500; }
   .ph-nav-tab.active { color:#fff; }
   .ph-nav-tab svg { width:18px; height:18px; margin:0 auto 2px; display:block; }
-
-  /* FLOATING CARDS AROUND PHONE */
   .float-card { position:absolute; background:var(--bg2); border:1px solid var(--border-b); border-radius:12px; padding:12px 14px; box-shadow:0 16px 36px rgba(0,0,0,.4); display:flex; align-items:center; gap:10px; z-index:1; opacity:0; animation:floatIn .6s ease forwards; }
   .float-card .fc-ico { width:32px; height:32px; border-radius:8px; background:var(--blue-dim); border:1px solid var(--border-b); display:flex; align-items:center; justify-content:center; color:var(--blue-mid); flex-shrink:0; }
   .float-card .fc-ico.green { background:var(--green-dim); border-color:rgba(14,203,129,.3); color:var(--green); }
@@ -202,8 +189,6 @@ if (window.location.hash) {
   .float-3 { top:200px; right:-10px; animation-delay:1.2s; }
   @keyframes floatIn { from{opacity:0;transform:translateY(20px) scale(.92)} to{opacity:1;transform:translateY(0) scale(1)} }
   .phone-caption { text-align:center; font-size:12px; color:var(--muted); margin-top:18px; }
-
-  /* COMPARE */
   .compare-section { position:relative; z-index:1; max-width:860px; margin:40px auto 0; padding:0 24px; }
   .compare-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:30px; display:grid; grid-template-columns:1fr 72px 1fr; gap:20px; align-items:center; }
   .comp-side { background:var(--bg3); border-radius:10px; padding:22px; text-align:center; border:1px solid var(--border); }
@@ -223,22 +208,17 @@ if (window.location.hash) {
   .comp-proj-label { color:var(--muted); }
   .comp-proj-val { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-weight:700; color:#fff; font-size:15px; }
   .comp-proj-yr { color:var(--muted); font-size:10px; }
-
-  /* BENEFITS */
   .benefits-section { position:relative; z-index:1; max-width:860px; margin:60px auto 0; padding:0 24px; }
   .section-label { font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); text-align:center; margin-bottom:32px; }
   .benefits-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-  .b-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:26px 22px; transition:border-color .2s,background .2s; }
+  .b-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:26px 22px; transition:border-color .2s,background .2s; position:relative; }
   .b-card:hover { border-color:var(--border-b); background:linear-gradient(135deg,var(--blue-dim),var(--bg2)); }
-  .b-card { position:relative; }
   .b-icon { width:42px; height:42px; background:var(--blue-dim); border:1px solid var(--border-b); border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:16px; color:var(--blue-mid); }
   .b-icon svg { width:22px; height:22px; }
   .b-stat { position:absolute; top:22px; right:22px; font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:18px; font-weight:800; color:var(--green); letter-spacing:-.01em; line-height:1; }
   .b-stat.blue { color:var(--blue-mid); }
   .b-title { font-size:14px; font-weight:600; color:#fff; margin-bottom:8px; line-height:1.3; }
   .b-text  { font-size:13px; color:var(--muted); line-height:1.7; }
-
-  /* TESTIMONIALS */
   .testimonials-section { position:relative; z-index:1; max-width:860px; margin:80px auto 0; padding:0 24px; }
   .t-header { text-align:center; margin-bottom:34px; }
   .t-eyebrow { display:inline-flex; align-items:center; gap:6px; font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--green); background:var(--green-dim); border:1px solid rgba(14,203,129,.25); padding:5px 14px; border-radius:100px; margin-bottom:14px; }
@@ -259,8 +239,6 @@ if (window.location.hash) {
   .t-name { font-weight:600; color:#fff; font-size:13px; line-height:1.2; }
   .t-place { font-size:11px; color:var(--muted); margin-top:2px; }
   .t-disclaimer { text-align:center; font-size:11px; color:var(--muted); opacity:.55; margin-top:16px; }
-
-  /* CALCULATOR */
   .calc-section { position:relative; z-index:1; max-width:860px; margin:60px auto 0; padding:0 24px; }
   .calc-card { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:32px; }
   .calc-inputs { display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:28px; }
@@ -289,8 +267,6 @@ if (window.location.hash) {
   .calc-diff-val { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:22px; font-weight:800; color:var(--green); }
   .calc-note { font-size:10px; color:var(--muted); line-height:1.5; opacity:.7; margin-top:12px; text-align:center; }
   .calc-cta { text-align:center; margin-top:24px; }
-
-  /* STEPS */
   .steps-section { position:relative; z-index:1; max-width:860px; margin:60px auto 0; padding:0 24px; }
   .steps-grid { display:grid; grid-template-columns:repeat(3,1fr); background:var(--bg2); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
   .step-item { padding:30px 22px; border-right:1px solid var(--border); position:relative; }
@@ -299,8 +275,6 @@ if (window.location.hash) {
   .step-title { font-size:14px; font-weight:600; color:#fff; margin-bottom:8px; }
   .step-text  { font-size:13px; color:var(--muted); line-height:1.65; }
   .step-connector { position:absolute; top:34px; right:-11px; width:22px; height:22px; background:var(--bg2); border:1px solid var(--border-b); border-radius:50%; display:flex; align-items:center; justify-content:center; z-index:2; font-size:10px; color:var(--blue-mid); }
-
-  /* USAGE — Three Ways to Use It */
   .usage-section { position:relative; z-index:1; max-width:860px; margin:60px auto 0; padding:0 24px; }
   .usage-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
   .u-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:24px 22px; transition:border-color .2s, background .2s; }
@@ -309,8 +283,6 @@ if (window.location.hash) {
   .u-icon svg { width:22px; height:22px; }
   .u-title { font-size:14px; font-weight:600; color:#fff; margin-bottom:8px; line-height:1.3; }
   .u-text { font-size:13px; color:var(--muted); line-height:1.65; }
-
-  /* FAQ */
   .faq-section { position:relative; z-index:1; max-width:720px; margin:60px auto 0; padding:0 24px; }
   .faq-list { display:flex; flex-direction:column; gap:10px; }
   .faq-item { background:var(--bg2); border:1px solid var(--border); border-radius:10px; overflow:hidden; transition:border-color .2s; }
@@ -324,32 +296,22 @@ if (window.location.hash) {
   .faq-a { max-height:0; overflow:hidden; transition:max-height .35s ease; }
   .faq-item.open .faq-a { max-height:500px; }
   .faq-a-inner { padding:0 22px 18px; font-size:13px; color:var(--muted); line-height:1.7; }
-
-  /* CTA SECTION */
   .cta-section { position:relative; z-index:1; text-align:center; padding:80px 24px; max-width:660px; margin:0 auto; }
   .cta-section h2 { font-family:'Space Grotesk','SF Pro Display',-apple-system,system-ui,sans-serif; font-size:clamp(22px,3.8vw,38px); font-weight:800; letter-spacing:-.02em; color:#fff; margin-bottom:14px; line-height:1.15; }
   .cta-section p { font-size:16px; color:var(--muted); margin-bottom:34px; }
-
-  /* TRUST */
   .trust-bar { position:relative; z-index:1; border-top:1px solid var(--border); padding:26px 24px; max-width:860px; margin:0 auto; }
   .trust-row { display:flex; align-items:center; justify-content:center; gap:32px; flex-wrap:wrap; }
   .t-item { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted); }
   .t-dot  { width:5px; height:5px; border-radius:50%; background:var(--green); flex-shrink:0; }
-
-  /* SOCIAL */
   .social-bar { position:relative; z-index:1; border-top:1px solid var(--border); padding:28px 24px; display:flex; flex-direction:column; align-items:center; gap:14px; }
   .social-label { font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
   .social-links { display:flex; align-items:center; gap:12px; }
   .social-btn { display:inline-flex; align-items:center; gap:9px; background:var(--bg2); border:1px solid var(--border); border-radius:8px; padding:11px 22px; text-decoration:none; color:var(--text); font-size:14px; font-weight:500; transition:border-color .2s,background .2s,transform .15s; }
   .social-btn:hover { border-color:var(--border-b); background:var(--blue-dim); transform:translateY(-1px); }
   .social-btn svg { width:18px; height:18px; flex-shrink:0; }
-
-  /* FOOTER */
   footer { position:relative; z-index:1; border-top:1px solid var(--border); background:var(--bg2); padding:30px 40px; display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; }
   .disclaimer { font-size:11px; color:var(--muted); max-width:700px; line-height:1.65; opacity:.6; }
   .footer-copy { font-size:11px; color:var(--muted); opacity:.4; }
-
-  /* STICKY MOBILE CTA */
   .sticky-cta { display:none; position:fixed; bottom:0; left:0; right:0; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); background:rgba(11,14,17,0.96); backdrop-filter:blur(14px); border-top:1px solid var(--border); z-index:80; transform:translateY(110%); transition:transform .3s ease; align-items:center; gap:10px; }
   .sticky-cta.show { transform:translateY(0); }
   .sticky-cta-info { flex:1; min-width:0; line-height:1.2; }
@@ -357,50 +319,30 @@ if (window.location.hash) {
   .sticky-cta-meta::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--green); animation:pulse 2s ease infinite; }
   .sticky-cta-sub { font-size:11px; color:var(--muted); margin-top:2px; }
   .sticky-cta-btn { display:flex; align-items:center; justify-content:center; gap:6px; background:var(--blue); color:#fff; padding:13px 18px; border-radius:10px; text-decoration:none; font-weight:600; font-size:14px; box-shadow:0 6px 18px rgba(27,106,255,.4); white-space:nowrap; flex-shrink:0; }
-
   @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
-
-  /* SCROLL-REVEAL — only apply hidden state when JS is available (html.js class added by inline script in head) */
   html.js .compare-card, html.js .b-card, html.js .calc-card, html.js .u-card, html.js .step-item, html.js .faq-item, html.js .testimonials-section .t-header, html.js .cta-section h2, html.js .cta-section > p, html.js .cta-section .cta-group, html.js .trust-row, html.js .social-bar { opacity:0; transform:translateY(22px); transition:opacity .8s cubic-bezier(.22,.61,.36,1), transform .8s cubic-bezier(.22,.61,.36,1); }
   html.js .compare-card.in, html.js .b-card.in, html.js .calc-card.in, html.js .u-card.in, html.js .step-item.in, html.js .faq-item.in, html.js .testimonials-section .t-header.in, html.js .cta-section h2.in, html.js .cta-section > p.in, html.js .cta-section .cta-group.in, html.js .trust-row.in, html.js .social-bar.in { opacity:1; transform:translateY(0); }
-  /* Stagger within grids — 60ms increments */
   .benefits-grid .b-card:nth-child(2), .usage-grid .u-card:nth-child(2), .steps-grid .step-item:nth-child(2), .faq-list .faq-item:nth-child(2) { transition-delay:80ms; }
   .benefits-grid .b-card:nth-child(3), .usage-grid .u-card:nth-child(3), .steps-grid .step-item:nth-child(3), .faq-list .faq-item:nth-child(3) { transition-delay:160ms; }
   .benefits-grid .b-card:nth-child(4), .faq-list .faq-item:nth-child(4) { transition-delay:240ms; }
   .benefits-grid .b-card:nth-child(5), .faq-list .faq-item:nth-child(5) { transition-delay:320ms; }
   .benefits-grid .b-card:nth-child(6), .faq-list .faq-item:nth-child(6) { transition-delay:400ms; }
-
-  /* CTA SHIMMER — premium light-sweep on hover */
   .btn-primary { position:relative; overflow:hidden; isolation:isolate; }
   .btn-primary::before { content:''; position:absolute; inset:0; background:linear-gradient(110deg, transparent 30%, rgba(255,255,255,.22) 50%, transparent 70%); transform:translateX(-100%); transition:transform .9s cubic-bezier(.22,.61,.36,1); pointer-events:none; z-index:1; }
   .btn-primary:hover::before { transform:translateX(100%); }
   .btn-primary > * { position:relative; z-index:2; }
-
-  /* TRUST-DOT — soft pulse glow on dots */
   .t-dot { box-shadow:0 0 0 0 rgba(14,203,129,.5); animation:trustpulse 2.6s ease infinite; }
   @keyframes trustpulse { 0%,100%{box-shadow:0 0 0 0 rgba(14,203,129,.45)} 50%{box-shadow:0 0 0 5px rgba(14,203,129,0)} }
-
-  /* SECTION-LABEL — subtle gradient text instead of flat grey */
   .section-label { background:linear-gradient(90deg, var(--muted), #fff, var(--muted)); background-size:200% 100%; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; animation:labelShine 6s ease infinite; }
   @keyframes labelShine { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
-
-  /* PHONE SECTION — gentle float */
   .phone-frame { animation:phoneFloat 7s ease-in-out infinite; }
   @keyframes phoneFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-
-  /* PERF: Tabular numerals on tickers prevents CLS */
   .stat-num, .ph-equity-num, .ph-balance, .calc-row-value, .calc-diff-val, .ival, .comp-rate, .comp-proj-val, .ph-rec-apr, .fc-info strong { font-variant-numeric: tabular-nums; }
-
-  /* PERF: Reserve space for phone to prevent CLS while loading */
   .phone-stage { contain: layout; }
   .phone-frame { will-change: auto; }
-
-  /* A11Y: Honor reduced-motion preference */
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; animation-delay: 0ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   }
-
-  /* RESPONSIVE */
   @media(max-width:768px) {
     .benefits-grid { grid-template-columns:1fr 1fr; }
     .usage-grid { grid-template-columns:1fr; }
@@ -415,20 +357,17 @@ if (window.location.hash) {
     .float-1 { top:30px; left:-10px; }
     .float-2 { bottom:40px; right:-10px; }
     .float-3 { top:160px; right:-20px; }
-    /* Stats on mobile — 2x2 grid, forced equal width columns */
     .stats-card { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px; }
     .stat-item { padding:22px 12px; min-height:130px; width:100%; overflow:hidden; }
     .stat-num { font-size:24px; white-space:nowrap; margin-bottom:6px; }
     .stat-label { font-size:11px; line-height:1.35; }
   }
-
   @media(max-width:600px) {
     nav { padding:0 16px; height:56px; gap:10px; }
     .nav-pill { display:none; }
     .lang-btn .lang-name { display:none; }
     .lang-btn { padding:7px 10px; }
     .lang-dropdown { right:0; width:calc(100vw - 32px); max-height:60vh; }
-
     .hero { padding:48px 20px 36px; }
     h1 { font-size:clamp(26px,7vw,40px); letter-spacing:-0.02em; }
     .subhead { font-size:15px; margin-bottom:32px; }
@@ -437,11 +376,9 @@ if (window.location.hash) {
     .btn-primary { padding:16px 28px; font-size:16px; justify-content:center; border-radius:10px; }
     .btn-secondary { padding:14px 24px; font-size:15px; justify-content:center; border-radius:10px; }
     .cta-hint { font-size:11px; }
-
     .stats-section { padding:0 16px; }
     .stat-item { padding:20px 12px; min-height:122px; }
     .stat-num { font-size:22px; }
-
     .phone-section { padding:0 16px; margin-top:20px; }
     .phone-stage { display:grid; grid-template-columns:1fr 1fr 1fr; grid-template-rows:auto auto; column-gap:8px; row-gap:18px; min-height:auto; padding:20px 0 24px; }
     .phone-frame { grid-column:1 / -1; grid-row:1; justify-self:center; width:280px; height:660px; }
@@ -452,19 +389,16 @@ if (window.location.hash) {
     .float-1 { grid-column:1; }
     .float-2 { grid-column:3; }
     .float-3 { display:flex !important; grid-column:2; }
-
     .compare-section { padding:0 16px; margin-top:30px; }
     .compare-card { padding:20px 16px; }
     .comp-rate { font-size:30px; }
     .comp-tag { font-size:10px; }
     .comp-desc { font-size:12px; }
-
     .benefits-section { padding:0 16px; margin-top:40px; }
     .benefits-grid { grid-template-columns:1fr; gap:12px; }
     .b-card { padding:20px 18px; }
     .b-icon { width:38px; height:38px; margin-bottom:12px; }
     .b-icon svg { width:20px; height:20px; }
-
     .testimonials-section { padding:0 16px; margin-top:48px; }
     .testimonials-marquee { mask-image:linear-gradient(90deg,transparent 0,#000 40px,#000 calc(100% - 40px),transparent 100%); -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 40px,#000 calc(100% - 40px),transparent 100%); }
     .testimonials-track { gap:12px; }
@@ -477,39 +411,30 @@ if (window.location.hash) {
     .calc-row-label { font-size:11px; }
     .calc-row-value { font-size:14px; }
     .calc-diff-val { font-size:18px; }
-
     .steps-section { padding:0 16px; margin-top:40px; }
     .steps-grid { border-radius:10px; }
     .step-item { padding:22px 18px; }
     .step-num { font-size:34px; margin-bottom:10px; }
-
     .usage-section { padding:0 16px; margin-top:40px; }
     .usage-grid { grid-template-columns:1fr; gap:12px; }
     .u-card { padding:20px 18px; }
-
     .faq-section { padding:0 16px; margin-top:40px; }
     .faq-q { padding:16px 18px; font-size:13px; }
     .faq-a-inner { padding:0 18px 16px; font-size:12px; }
-
     .cta-section { padding:56px 20px; }
     .cta-section h2 { font-size:clamp(20px,6vw,32px); }
     .cta-section p { font-size:14px; margin-bottom:24px; }
-
     .trust-bar { padding:20px 16px; }
     .trust-row { gap:10px 18px; justify-content:center; }
     .t-item { font-size:12px; }
-
     .social-bar { padding:22px 16px; gap:12px; }
     .social-links { gap:10px; width:100%; }
     .social-btn { flex:1; justify-content:center; padding:13px 16px; font-size:14px; border-radius:10px; }
-
     footer { padding:24px 20px; gap:12px; }
     .disclaimer { font-size:10px; }
-
     .sticky-cta { display:flex; }
     body { padding-bottom:72px; }
   }
-
   @media(max-width:390px) {
     h1 { font-size:24px; }
     .subhead { font-size:14px; }
@@ -526,8 +451,6 @@ if (window.location.hash) {
 </head>
 <body>
 <div class="glow"></div>
-
-<!-- NAV -->
 <nav>
   <a class="logo" href="#">
     <div class="logo-icon">
@@ -538,16 +461,13 @@ if (window.location.hash) {
     </div>
     <span class="logo-text">Wealth<span>Shift</span></span>
   </a>
-
   <span class="nav-pill" data-t="navpill">Available in 170+ countries</span>
-
   <div class="lang-switcher" id="LS">
     <button class="lang-btn" onclick="toggleLang()">
       <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
       <span class="lang-name" id="LN">English</span>
       <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
     </button>
-
     <div class="lang-dropdown" id="LD">
       <div class="lang-group-label">Popular</div>
       <div class="lang-option active" data-code="en" data-label="English" onclick="setLang(this)">English <svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg></div>
@@ -574,20 +494,16 @@ if (window.location.hash) {
     </div>
   </div>
 </nav>
-
-<!-- HERO -->
 <section class="hero">
   <div class="hook-badge"><span class="hook-dot"></span><span data-t="badge">Financial Navigator · 2026</span></div>
   <h1><span data-t="h1a">Your money is losing value</span><br><span data-t="h1b">while you</span> <span class="accent" id="h1Type">do nothing about it</span></h1>
   <p class="subhead" data-t="subhead">We show people in 170+ countries how to protect savings in a digital dollar — earn daily returns, send transfers without fees, and grow wealth with automated strategies. From your phone. For free.</p>
   <div class="cta-group">
-    <a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="btn-primary" data-t="cta1">Get Started Free →</a>
+    <a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="btn-primary mexc-cta" data-cta-id="hero" data-t="cta1">Get Started Free →</a>
     <a href="#preview" onclick="event.preventDefault();scrollToPreview()" class="btn-secondary" data-t="cta2">▶ See How It Works</a>
   </div>
   <p class="cta-hint" data-t="hint1">Sign up in 60 seconds · No deposit required · Start from $10</p>
 </section>
-
-<!-- STATS -->
 <div class="stats-section">
   <div class="stats-card">
     <div class="stat-item hero">
@@ -601,8 +517,6 @@ if (window.location.hash) {
     <div class="stat-item"><span class="stat-num" data-count="100" data-prefix="$" data-suffix="M">$100M</span><span class="stat-label" data-t="st4">user protection<br>insurance fund</span></div>
   </div>
 </div>
-
-<!-- PHONE MOCKUP — MEXC EARN STYLE -->
 <section class="phone-section" id="preview">
   <div class="phone-stage">
     <div class="float-card float-1">
@@ -623,7 +537,6 @@ if (window.location.hash) {
       </div>
       <div class="fc-info"><strong data-t="float3s">No bank</strong><span data-t="float3">170+ countries</span></div>
     </div>
-
     <div class="phone-frame">
       <div class="phone-notch"></div>
       <div class="phone-screen">
@@ -729,8 +642,6 @@ if (window.location.hash) {
   </div>
   <div class="phone-caption" data-t="phcaption">Live preview of the app experience. Actual rates vary and are not guaranteed.</div>
 </section>
-
-<!-- COMPARE -->
 <div class="compare-section">
   <div class="compare-card">
     <div class="comp-side">
@@ -755,8 +666,6 @@ if (window.location.hash) {
   </div>
   <p class="compare-disclaimer" data-t="compdisc">*Illustrative comparison. Rates vary by product and are not guaranteed.</p>
 </div>
-
-<!-- BENEFITS -->
 <section class="benefits-section">
   <div class="section-label" data-t="secw">What You Get</div>
   <div class="benefits-grid">
@@ -798,8 +707,6 @@ if (window.location.hash) {
     </div>
   </div>
 </section>
-
-<!-- TESTIMONIALS -->
 <section class="testimonials-section">
   <div class="t-header">
     <div class="t-eyebrow" data-t="testeye">★★★★★ · Real Users</div>
@@ -813,7 +720,6 @@ if (window.location.hash) {
       <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-quote" data-t="t4q">"I wanted to do something with my savings without learning to trade. I picked a top performer with years of history, set my limit — the system mirrors every move. Small daily gains, no monitoring."</p><div class="t-author"><div class="t-avatar a2">L</div><div><div class="t-name" data-t="t4n">Lisa</div><div class="t-place" data-t="t4p">Netherlands · Copy trades</div></div></div></div>
       <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-quote" data-t="t5q">"Watched Tesla and NVIDIA for years but couldn't open a broker account. Now I follow them from my phone, starting at $50. Caught the recent AI run-up too."</p><div class="t-author"><div class="t-avatar a3">D</div><div><div class="t-name" data-t="t5n">David</div><div class="t-place" data-t="t5p">UK · Stocks on phone</div></div></div></div>
       <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-quote" data-t="t6q">"Set up a bot in 10 minutes — buys low, sells high while I sleep. Wake up to dozens of small wins. No graphs to watch, no time to spend."</p><div class="t-author"><div class="t-avatar a2">M</div><div><div class="t-name" data-t="t6n">Marco</div><div class="t-place" data-t="t6p">Italy · Grid bot</div></div></div></div>
-      <!-- duplicate for seamless loop -->
       <div class="t-card" aria-hidden="true"><div class="t-stars">★★★★★</div><p class="t-quote" data-t="t1q">"I used to lose $45 every month sending money to my family through the bank. Now I pay $2 and almost everything arrives. After a year — $540 saved."</p><div class="t-author"><div class="t-avatar a1">M</div><div><div class="t-name" data-t="t1n">Maria</div><div class="t-place" data-t="t1p">Spain · Sends money home</div></div></div></div>
       <div class="t-card" aria-hidden="true"><div class="t-stars">★★★★★</div><p class="t-quote" data-t="t2q">"I saved for 3 years. The lira lost half its value. I switched my savings to a digital dollar — now they hold their value and earn something every day."</p><div class="t-author"><div class="t-avatar a2">A</div><div><div class="t-name" data-t="t2n">Ahmet</div><div class="t-place" data-t="t2p">Turkey · Protects savings</div></div></div></div>
       <div class="t-card" aria-hidden="true"><div class="t-stars">★★★★★</div><p class="t-quote" data-t="t3q">"I was tired of my bank paying 0.5%. Moved part of my savings here — earnings hit my account every day. Small at first, but it adds up, and I can withdraw anytime."</p><div class="t-author"><div class="t-avatar a3">A</div><div><div class="t-name" data-t="t3n">Anna</div><div class="t-place" data-t="t3p">Germany · Earns daily</div></div></div></div>
@@ -824,8 +730,6 @@ if (window.location.hash) {
   </div>
   <p class="t-disclaimer" data-t="tdisc">*Based on customer feedback. Individual results vary. Not financial advice.</p>
 </section>
-
-<!-- CALCULATOR -->
 <section class="calc-section">
   <div class="section-label" data-t="seccalc">See What Your Savings Could Become</div>
   <div class="calc-card">
@@ -875,13 +779,11 @@ if (window.location.hash) {
   </div>
   <div class="calc-cta">
     <div class="cta-group">
-      <a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="btn-primary" data-t="calccta">Start Earning Today →</a>
+      <a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="btn-primary mexc-cta" data-cta-id="calc" data-t="calccta">Start Earning Today →</a>
     </div>
     <p class="cta-hint" style="margin-top:14px" data-t="calcctahint">Free · No deposit · From $10</p>
   </div>
 </section>
-
-<!-- STEPS -->
 <section class="steps-section">
   <div class="section-label" style="margin-bottom:28px" data-t="sech">How to Start — 3 Steps</div>
   <div class="steps-grid">
@@ -890,8 +792,6 @@ if (window.location.hash) {
     <div class="step-item"><div class="step-num">03</div><div class="step-title" data-t="s3t">Watch Your Money Grow</div><div class="step-text" data-t="s3d">Activate a savings plan and receive daily earnings. No manual work needed.</div></div>
   </div>
 </section>
-
-<!-- USAGE — Three Ways to Use It -->
 <section class="usage-section">
   <div class="section-label" data-t="secuse">Three Ways to Use It</div>
   <div class="usage-grid">
@@ -912,8 +812,6 @@ if (window.location.hash) {
     </div>
   </div>
 </section>
-
-<!-- FAQ -->
 <section class="faq-section">
   <div class="section-label" data-t="secfaq">Frequently Asked Questions</div>
   <div class="faq-list" id="faqList">
@@ -979,16 +877,12 @@ if (window.location.hash) {
     </div>
   </div>
 </section>
-
-<!-- SECOND CTA -->
 <section class="cta-section">
   <h2 data-t="c2h">One step — and your money<br>starts working for you</h2>
   <p data-t="c2p">Free. No deposit required. 2 minutes from your phone.</p>
-  <div class="cta-group"><a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="btn-primary" data-t="cta1">Get Started Free →</a></div>
+  <div class="cta-group"><a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="btn-primary mexc-cta" data-cta-id="second" data-t="cta1">Get Started Free →</a></div>
   <p class="cta-hint" style="margin-top:14px" data-t="hint2">No commitment · Cancel anytime · From $10</p>
 </section>
-
-<!-- TRUST -->
 <div class="trust-bar">
   <div class="trust-row">
     <div class="t-item"><span class="t-dot"></span><span data-t="tr1">Operating since 2018</span></div>
@@ -998,19 +892,15 @@ if (window.location.hash) {
     <div class="t-item"><span class="t-dot"></span><span data-t="tr5">From $10</span></div>
   </div>
 </div>
-
-<!-- SOCIAL -->
 <div class="social-bar">
   <div class="social-label" data-t="follow">Follow us</div>
   <div class="social-links">
-    <a href="https://www.facebook.com/profile.php?id=61576837200943" target="_blank" rel="noopener" class="social-btn">
+    <a href="https://www.facebook.com/profile.php?id=61576837200943" target="_blank" rel="noopener" class="social-btn fb-link" data-social="facebook">
       <svg viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.885v2.27h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
       Facebook
     </a>
   </div>
 </div>
-
-<!-- FOOTER -->
 <footer>
   <a class="logo" href="#" style="text-decoration:none;">
     <div class="logo-icon"><svg viewBox="0 0 18 18" fill="none"><path d="M9 2L15 6V12L9 16L3 12V6L9 2Z" fill="white" opacity="0.9"/><path d="M9 6L12 8V12L9 14L6 12V8L9 6Z" fill="#0043FF"/></svg></div>
@@ -1019,48 +909,31 @@ if (window.location.hash) {
   <p class="disclaimer" data-t="disc">WealthShift is an informational resource only. Nothing on this page constitutes financial advice or an investment recommendation. All financial instruments carry risk. Results may vary. Please review the platform's terms and conditions before getting started.</p>
   <p class="footer-copy">© 2026 WealthShift</p>
 </footer>
-
-<!-- STICKY MOBILE CTA -->
 <div class="sticky-cta" id="stickyCta">
   <div class="sticky-cta-info">
     <div class="sticky-cta-meta" data-t="stickymeta">10M+ joined</div>
     <div class="sticky-cta-sub" data-t="stickysub">From $10 · 60 sec signup</div>
   </div>
-  <a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="sticky-cta-btn" data-t="stickycta">Get Started →</a>
+  <a href="https://promote.mexc.com/b/earn" target="_blank" rel="noopener" class="sticky-cta-btn mexc-cta" data-cta-id="sticky" data-t="stickycta">Get Started →</a>
 </div>
-
 <script>
+/* ===== META PIXEL EVENT HELPERS =====
+   fbTrack — standard Meta events (Lead, InitiateCheckout, etc.)
+   fbTrackCustom — custom events (ClickToPlatform, FollowSocial, LanguageSwitch, CalculatorUsed)
+   Safe no-ops if fbq is missing (e.g. ad-blocker, dev). */
+function fbTrack(eventName, data) {
+  try { if (typeof fbq === 'function') { data ? fbq('track', eventName, data) : fbq('track', eventName); } } catch(e){}
+}
+function fbTrackCustom(eventName, data) {
+  try { if (typeof fbq === 'function') { data ? fbq('trackCustom', eventName, data) : fbq('trackCustom', eventName); } } catch(e){}
+}
+
 const T = {
-  en:{ navpill:"Available in 170+ countries", np2:"● $15M paid to users last month", np3:"● 10M+ users worldwide", proj5y:"over 5 yrs", badge:"Financial Navigator · 2026", h1a:"Your money is losing value", h1b:"while you", h1c:"do nothing about it", subhead:"We show people in 170+ countries how to protect savings in a digital dollar — earn daily returns, send transfers without fees, and grow wealth with automated strategies. From your phone. For free.", cta1:"Get Started Free →", cta2:"▶ See How It Works", hint1:"Sign up in 60 seconds · No deposit required · Start from $10", st1:"APY on digital savings<br>vs 0.5% at the bank", st2:"users<br>worldwide", st3:"countries<br>no restrictions", st4:"user protection<br>insurance fund", apytip:"APY (Annual Percentage Yield) reflects estimated annual return with compounding. Rates vary by product and are not guaranteed.", float1:"today", float2:"last 10 days", float3s:"No bank", float3:"170+ countries", phequity:"Total Equity", phaccrued:"Interest Accrued", phyday:"Yesterday's Interest", phgoearn:"Go to Earn", phfut:"Futures Earn", phhold:"Hold &amp; Earn", phstake:"SOL Staking", phautoearn:"Auto-Earn, Up to <b>15%</b> APR", phautosub:"Put idle assets to work", phstart:"Start", phrec:"Recommended", phrecsub:"Put your USDT to work — daily payouts, withdraw anytime.", phcrypto:"Crypto", phestapr:"Est. APR", phflex:"Flexible", phhome:"Home", phmkts:"Markets", phtrade:"Trade", phfutures:"Futures", phwallets:"Wallets", phcaption:"Live preview of the app experience. Actual rates vary and are not guaranteed.", ct1:"Bank Savings Account", cd1:"per year · funds locked", ct2:"Digital Savings Account", cd2:"APY · withdraw anytime", compdisc:"*Illustrative comparison. Rates vary by product and are not guaranteed.", secw:"What You Get", b1t:"Protection from Inflation", b1d:"A digital dollar always equals $1 — it doesn't lose value with your local currency. Your savings hold their purchasing power.", b2t:"Your Money Works for You", b2d:"Savings plans, automated bots, strategy copying — earnings hit your account every day, no manual work or expertise needed.", b3t:"Send Money Without Fees", b3d:"Send money to any country directly — no banks, no middlemen. Instead of $40–50 in fees, pay just $1–2. Your family gets almost everything.", b4t:"Global Stocks From Your Phone", b4d:"Tesla, Apple, NVIDIA — no broker, no $25,000 minimum. Access global markets from the app, starting from $10.", b5t:"Automated Bot 24/7", b5d:"Set up a bot in 5 minutes — it buys low and sells high automatically while you live your life. No monitoring required.", b6t:"Try Risk-Free First", b6d:"Practice with a demo account using virtual funds — no commitment. Switch to real money starting from $10 when you're ready.", b2s:"Daily", b4s:"From $10", b5s:"24/7", b6s:"$0 risk", sectest:"What People Say", t1q:"\"I used to lose $45 every month sending money to my family through the bank. Now I pay $2 and almost everything arrives. After a year — $540 saved.\"", t1n:"Maria", t1p:"Spain · Sends money home", t2q:"\"I saved for 3 years. The lira lost half its value. I switched my savings to a digital dollar — now they hold their value and earn something every day.\"", t2n:"Ahmet", t2p:"Turkey · Protects savings", t3q:"\"I was tired of my bank paying 0.5%. Moved part of my savings here — earnings hit my account every day. Small at first, but it adds up, and I can withdraw anytime.\"", t3n:"Anna", t3p:"Germany · Earns daily", tdisc:"*Based on customer feedback. Individual results vary. Not financial advice.", testeye:"★★★★★ · Real Users", testh2:"Why people stay with us", t4q:"\"I wanted to do something with my savings without learning to trade. I picked a top performer with years of history, set my limit — the system mirrors every move. Small daily gains, no monitoring.\"", t4n:"Lisa", t4p:"Netherlands · Copy trades", t5q:"\"Watched Tesla and NVIDIA for years but couldn't open a broker account. Now I follow them from my phone, starting at $50. Caught the recent AI run-up too.\"", t5n:"David", t5p:"UK · Stocks on phone", t6q:"\"Set up a bot in 10 minutes — buys low, sells high while I sleep. Wake up to dozens of small wins. No graphs to watch, no time to spend.\"", t6n:"Marco", t6p:"Italy · Grid bot", secuse:"Three Ways to Use It", u1t:"Withdraw to your card", u1d:"Direct payout to Visa or Mastercard. Available 24/7, processed in minutes. No lock-up.", u2t:"Send anywhere", u2d:"Direct transfer to any country — no banks, no middlemen. $1–2 fee instead of $40–50.", u3t:"Keep it working", u3d:"Leave it as a digital dollar — daily payouts add up while you decide your next step.", seccalc:"See What Your Savings Could Become", calcamt:"Your savings", calcyrs:"Time period", calcyrsuf:"years", calcbank:"Bank (0.5%)", calcdig:"Digital (~15%)", calcdiff:"Your potential gain:", calcnote:"*Illustrative projection based on theoretical compounding at sample rates. Actual rates and results vary, are not guaranteed, and depend on product, market, and other conditions. Not financial advice.", calccta:"Start Earning Today →", calcctahint:"Free · No deposit · From $10", sech:"How to Start — 3 Steps", s1t:"Create a Free Account", s1d:"Just your email and password. Takes 2 minutes. No deposit required.", s2t:"Convert to a Digital Dollar", s2d:"Directly from your phone, without a bank. Start from just $10.", s3t:"Watch Your Money Grow", s3d:"Activate a savings plan and receive daily earnings. No manual work needed.", secfaq:"Frequently Asked Questions", faq1q:"Is this a scheme or pyramid?", faq1a:"No. The underlying platform is one of the largest digital asset exchanges in the world, operating since 2018 with more than 10 million users across 170+ countries. It earns from trading commissions, not new sign-ups. You can deposit, withdraw, and close your account at any time.", faq2q:"How do I withdraw my money?", faq2a:"Withdrawal is available 24/7 — directly to your bank card, bank account, or another wallet. There is no lock-up period on savings, and the average withdrawal is processed within minutes. Fees depend on the network and payout method.", faq3q:"Is the digital dollar safe? Why does it stay at $1?", faq3a:"A digital dollar (a regulated stablecoin like USDT or USDC) is backed 1-to-1 by real cash and short-term US treasury reserves, audited by independent firms. That backing is what keeps its value pegged to $1 regardless of local currency movements.", faq4q:"What about taxes?", faq4a:"Tax rules depend on your country. Most jurisdictions treat digital-asset income similarly to investment income. The platform provides a full transaction history you can export for tax reporting. We recommend consulting a local tax advisor for your specific situation.", faq5q:"What's the minimum to start?", faq5a:"$10. Registration is free and the demo mode lets you try everything with virtual money first. There are no monthly fees, no obligations, and no penalties for closing your account.", faq6q:"How is my money protected?", faq6a:"A digital dollar (regulated stablecoin) is backed 1:1 by real cash and short-term US treasury reserves — its value stays at $1 regardless of market movements. The platform is protected by a $100M user-protection insurance fund, two-factor authentication, cold storage for the majority of assets, and over 7 years of operating history serving 10M+ users worldwide. A demo mode lets you practice everything with virtual funds before using real money. Higher-risk products like leveraged trading are entirely optional — the savings and transfer products covered here are designed to keep your principal stable. As with any financial service, only commit what you can manage.", c2h:"One step — and your money<br>starts working for you", c2p:"Free. No deposit required. 2 minutes from your phone.", hint2:"No commitment · Cancel anytime · From $10", tr1:"Operating since 2018", tr2:"$100M insurance fund", tr3:"10M+ users", tr4:"Withdraw anytime", tr5:"From $10", follow:"Follow us", disc:"WealthShift is an informational resource only. Nothing on this page constitutes financial advice or an investment recommendation. All financial instruments carry risk. Results may vary. Please review the platform's terms and conditions before getting started.", stickycta:"Get Started →", stickymeta:"10M+ joined", stickysub:"From $10 · 60 sec signup" },
-
-  ru:{ navpill:"Доступно в 170+ странах", np2:"● $15M выплачено пользователям в прошлом месяце", np3:"● 10M+ пользователей по всему миру", proj5y:"за 5 лет", badge:"Финансовый навигатор · 2026", h1a:"Ваши деньги теряют ценность", h1b:"пока вы", h1c:"ничего не делаете", subhead:"Мы показываем, как люди в 170+ странах защищают сбережения в цифровом долларе — получают ежедневные начисления, отправляют переводы без комиссий и зарабатывают на автоматических стратегиях. Прямо с телефона. Бесплатно.", cta1:"Начать бесплатно →", cta2:"▶ Посмотреть как работает", hint1:"Регистрация за 60 секунд · Без обязательных вложений · От $10", st1:"APY на цифровом вкладе<br>vs 0.5% в банке", st2:"пользователей<br>по всему миру", st3:"стран<br>без ограничений", st4:"страховой фонд<br>защиты средств", apytip:"APY (Annual Percentage Yield) — расчётная годовая доходность с учётом капитализации. Ставки зависят от продукта и не гарантированы.", float1:"сегодня", float2:"за 10 дней", float3s:"Без банка", float3:"170+ стран", phequity:"Общий баланс", phaccrued:"Начислено сегодня", phyday:"Начислено вчера", phgoearn:"Перейти в Earn", phfut:"Futures Earn", phhold:"Hold &amp; Earn", phstake:"SOL Стейкинг", phautoearn:"Auto-Earn, до <b>15%</b> APR", phautosub:"Активы работают сами", phstart:"Запустить", phrec:"Рекомендуем", phrecsub:"Положи USDT в работу — ежедневные начисления, вывод в любой момент.", phcrypto:"Актив", phestapr:"Ожидаемый APR", phflex:"Гибкий", phhome:"Главная", phmkts:"Рынки", phtrade:"Трейд", phfutures:"Фьючерсы", phwallets:"Кошелёк", phcaption:"Превью интерфейса приложения. Реальные ставки могут отличаться и не гарантированы.", ct1:"Банковский вклад", cd1:"годовых · деньги заморожены", ct2:"Цифровой вклад", cd2:"APY · вывод в любой момент", compdisc:"*Иллюстративное сравнение. Ставки зависят от продукта и не гарантированы.", secw:"Что вы получаете", b1t:"Защита от инфляции", b1d:"Цифровой доллар всегда равен $1 — не обесценивается вместе с местной валютой. Сбережения сохраняют покупательную способность.", b2t:"Деньги работают сами", b2d:"Накопительные планы, автоматические роботы, копирование стратегий — доход начисляется каждый день без вашего участия.", b3t:"Переводы без потерь", b3d:"Отправляйте деньги в любую страну напрямую. Вместо $40–50 комиссии банку — $1–2 на любую сумму. Семья получает почти всё.", b4t:"Акции с телефона", b4d:"Tesla, Apple, NVIDIA — без брокера, без минимума $25 000. Доступ к мировым рынкам из приложения, от $10.", b5t:"Автоматический робот 24/7", b5d:"Настройте бота за 5 минут — он покупает при падении и продаёт при росте автоматически, пока вы занимаетесь своей жизнью.", b6t:"Попробуйте без риска", b6d:"Демо-режим с виртуальными деньгами — практикуйтесь без обязательств. Переключитесь на реальные деньги от $10, когда будете готовы.", b2s:"Каждый день", b4s:"От $10", b5s:"24/7", b6s:"$0 риск", sectest:"Что говорят люди", t1q:"«Каждый месяц теряла $45 на переводах семье через банк. Сейчас плачу $2 — и почти всё доходит. За год — $540 сэкономлено.»", t1n:"Мария", t1p:"Испания · Отправляет деньги домой", t2q:"«Откладывал 3 года. Лира обесценилась вдвое. Перевёл сбережения в цифровой доллар — теперь они держат ценность и каждый день что-то приносят.»", t2n:"Ахмет", t2p:"Турция · Защищает сбережения", t3q:"«Надоело что банк платит 0.5%. Перевела часть сбережений сюда — каждый день что-то начисляется. Сначала немного, но накапливается — и в любой момент могу снять.»", t3n:"Анна", t3p:"Германия · Получает ежедневно", tdisc:"*На основе отзывов клиентов. Индивидуальные результаты могут отличаться. Не является финансовым советом.", testeye:"★★★★★ · Реальные пользователи", testh2:"Почему люди остаются с нами", t4q:"«Хотела что-то делать со сбережениями, не учась торговать. Выбрала топ-трейдера с многолетней историей, поставила лимит — система копирует каждую сделку. Небольшие ежедневные начисления, ноль наблюдения.»", t4n:"Лиза", t4p:"Голландия · Copy trades", t5q:"«Годами следил за Tesla и NVIDIA, но не мог открыть брокерский счёт. Теперь работаю с ними с телефона, начал с $50. И последнюю AI-волну не упустил.»", t5n:"Дэвид", t5p:"Великобритания · Акции с телефона", t6q:"«Настроил бота за 10 минут — покупает на падении, продаёт на росте пока я сплю. Просыпаюсь — десятки мелких побед. Без графиков и без времени.»", t6n:"Марко", t6p:"Италия · Grid bot", secuse:"Три способа использовать", u1t:"Вывод на карту", u1d:"Прямая выплата на Visa или Mastercard. 24/7, за несколько минут. Без блокировок.", u2t:"Переводы куда угодно", u2d:"Прямой перевод в любую страну — без банков, без посредников. $1–2 вместо $40–50 комиссии.", u3t:"Пусть работают", u3d:"Оставьте как цифровой доллар — ежедневные начисления накапливаются, пока вы решаете следующий шаг.", seccalc:"Посмотрите, во что превратятся ваши сбережения", calcamt:"Ваши сбережения", calcyrs:"Срок", calcyrsuf:"лет", calcbank:"Банк (0.5%)", calcdig:"Цифровой (~15%)", calcdiff:"Ваша потенциальная выгода:", calcnote:"*Иллюстративный расчёт с теоретической капитализацией по примерным ставкам. Реальные ставки и результаты зависят от продукта, рынка и других условий, могут отличаться и не гарантированы. Не является финансовым советом.", calccta:"Начать зарабатывать →", calcctahint:"Бесплатно · Без вложений · От $10", sech:"Как начать — 3 шага", s1t:"Создайте бесплатный аккаунт", s1d:"Только email и пароль. Занимает 2 минуты. Никаких обязательных вложений.", s2t:"Конвертируйте в цифровой доллар", s2d:"Прямо с телефона, без банка и без ограничений. От $10.", s3t:"Наблюдайте как деньги растут", s3d:"Активируйте накопительный план — и получайте ежедневные начисления. Никакой ручной работы.", secfaq:"Частые вопросы", faq1q:"Это не пирамида и не схема?", faq1a:"Нет. За сервисом стоит одна из крупнейших мировых криптобирж, работающая с 2018 года и обслуживающая более 10 млн пользователей в 170+ странах. Платформа зарабатывает на комиссиях за сделки, а не на привлечении новых пользователей. Вы можете вносить, выводить деньги и закрыть счёт в любой момент.", faq2q:"Как вывести деньги?", faq2a:"Вывод доступен 24/7 — на банковскую карту, счёт или другой кошелёк. Накопительные продукты не блокируют средства, среднее время вывода — несколько минут. Комиссии зависят от сети и способа выплаты.", faq3q:"Цифровой доллар безопасен? Почему он всегда $1?", faq3a:"Цифровой доллар (регулируемый стейблкоин типа USDT или USDC) обеспечен 1-к-1 реальными деньгами и краткосрочными гособлигациями США, что подтверждается независимыми аудитами. Именно это обеспечение удерживает курс на $1 независимо от движений местных валют.", faq4q:"А что с налогами?", faq4a:"Налоговые правила зависят от вашей страны. В большинстве юрисдикций доход от цифровых активов облагается как инвестиционный. Платформа предоставляет полную историю операций для отчётности. Рекомендуем проконсультироваться с местным налоговым консультантом.", faq5q:"Какой минимум для старта?", faq5a:"$10. Регистрация бесплатна, демо-режим позволяет попробовать всё на виртуальных деньгах. Нет ежемесячных платежей, обязательств и штрафов за закрытие счёта.", faq6q:"Как защищены мои деньги?", faq6a:"Цифровой доллар (регулируемый стейблкоин) обеспечен 1-к-1 реальными деньгами и краткосрочными гособлигациями США — его стоимость остаётся $1 независимо от движений рынка. Платформу защищают: страховой фонд защиты пользователей $100M, двухфакторная аутентификация, холодное хранение большинства активов и 7+ лет работы с 10M+ пользователей по всему миру. Демо-режим позволяет попрактиковаться с виртуальными деньгами перед использованием реальных. Более рискованные продукты (торговля с плечом) полностью опциональны — продукты накоплений и переводов, описанные здесь, спроектированы так, чтобы основной капитал оставался стабильным. Как и в любом финансовом сервисе, вкладывайте только то, чем можете управлять.", c2h:"Один шаг — и ваши деньги<br>начинают работать", c2p:"Бесплатно. Без обязательных вложений. 2 минуты с телефона.", hint2:"Без обязательств · Отмена в любой момент · От $10", tr1:"Работает с 2018 года", tr2:"Страховой фонд $100M", tr3:"10M+ пользователей", tr4:"Вывод в любой момент", tr5:"От $10", follow:"Мы в соцсетях", disc:"WealthShift является информационным ресурсом. Представленная информация не является финансовым советом или инвестиционной рекомендацией. Финансовые инструменты несут риски. Результаты могут отличаться. Перед началом ознакомьтесь с условиями платформы.", stickycta:"Начать →", stickymeta:"10M+ уже здесь", stickysub:"От $10 · 60 сек регистрация" },
-
-  uk:{ navpill:"Доступно в 170+ країнах", badge:"Фінансовий навігатор · 2026", h1a:"Ваші гроші втрачають цінність", h1b:"поки ви", h1c:"нічого не робите", subhead:"Ми показуємо, як люди у 170+ країнах захищають заощадження в цифровому доларі — отримують щоденні нарахування, надсилають перекази без комісій та заробляють на автоматичних стратегіях. Прямо з телефону. Безкоштовно.", cta1:"Почати безкоштовно →", cta2:"▶ Переглянути як працює", hint1:"Реєстрація за 60 секунд · Без обов'язкових вкладень · Від $10", st1:"APY на цифровому вкладі<br>vs 0.5% у банку", st2:"користувачів<br>по всьому світу", st3:"країн<br>без обмежень", st4:"страховий фонд<br>захисту коштів", ct1:"Банківський вклад", cd1:"річних · кошти заморожені", ct2:"Цифровий вклад", cd2:"APY · виведення будь-коли", secw:"Що ви отримуєте", b1t:"Захист від інфляції", b1d:"Цифровий долар завжди дорівнює $1 — не знецінюється разом з місцевою валютою.", b2t:"Гроші працюють самі", b2d:"Накопичувальні плани, автоматичні роботи, копіювання стратегій — дохід нараховується щодня без вашої участі.", b3t:"Перекази без втрат", b3d:"Надсилайте гроші в будь-яку країну напряму. Замість $40–50 комісії — $1–2 на будь-яку суму.", b4t:"Акції з телефону", b4d:"Tesla, Apple, NVIDIA — без брокера, без мінімуму $25 000. Доступ до світових ринків від $10.", b5t:"Автоматичний бот 24/7", b5d:"Налаштуйте бота за 5 хвилин — він купує при падінні і продає при зростанні автоматично.", b6t:"Спробуйте без ризику", b6d:"Демо-режим з віртуальними грошима — практикуйтесь без зобов'язань. Переходьте на реальні гроші від $10, коли будете готові.", sech:"Як почати — 3 кроки", s1t:"Створіть безкоштовний акаунт", s1d:"Лише email та пароль. Займає 2 хвилини. Без обов'язкових вкладень.", s2t:"Конвертуйте в цифровий долар", s2d:"Прямо з телефону, без банку. Від $10.", s3t:"Спостерігайте як гроші ростуть", s3d:"Активуйте накопичувальний план — отримуйте щоденні нарахування.", c2h:"Один крок — і ваші гроші<br>починають працювати", c2p:"Безкоштовно. Без обов'язкових вкладень. 2 хвилини з телефону.", hint2:"Без зобов'язань · Скасування будь-коли · Від $10", tr1:"Працює з 2018 року", tr2:"Страховий фонд $100M", tr3:"10M+ користувачів", tr4:"Виведення будь-коли", tr5:"Від $10", follow:"Ми в соцмережах", disc:"WealthShift є інформаційним ресурсом. Інформація не є фінансовою порадою. Фінансові інструменти несуть ризики.", stickycta:"Почати безкоштовно →" },
-
-  es:{ navpill:"Disponible en 170+ países", badge:"Navegador Financiero · 2026", h1a:"Tu dinero está perdiendo valor", h1b:"mientras", h1c:"no haces nada al respecto", subhead:"Mostramos a personas en 170+ países cómo proteger sus ahorros en dólares digitales — ganar rendimientos diarios, enviar transferencias sin comisiones y hacer crecer su patrimonio con estrategias automatizadas. Desde tu teléfono. Gratis.", cta1:"Empezar Gratis →", cta2:"▶ Ver Cómo Funciona", hint1:"Regístrate en 60 segundos · Sin depósito requerido · Desde $10", st1:"APY en ahorros digitales<br>vs 0.5% en el banco", st2:"usuarios<br>en todo el mundo", st3:"países<br>sin restricciones", st4:"fondo de seguro<br>de protección", ct1:"Cuenta de Ahorros Bancaria", cd1:"por año · fondos bloqueados", ct2:"Cuenta de Ahorros Digital", cd2:"APY · retira cuando quieras", secw:"Qué Obtienes", b1t:"Protección contra la Inflación", b1d:"Un dólar digital siempre equivale a $1 — no pierde valor con tu moneda local.", b2t:"Tu Dinero Trabaja por Ti", b2d:"Planes de ahorro, bots automatizados, copia de estrategias — ganancias en tu cuenta cada día.", b3t:"Envía Dinero Sin Comisiones", b3d:"Envía dinero a cualquier país directamente — sin bancos. En lugar de $40–50, paga solo $1–2.", b4t:"Acciones Globales Desde Tu Móvil", b4d:"Tesla, Apple, NVIDIA — sin broker, sin mínimo de $25,000. Desde $10.", b5t:"Bot Automatizado 24/7", b5d:"Configura un bot en 5 minutos — compra bajo y vende alto automáticamente.", b6t:"Prueba Sin Riesgo Primero", b6d:"Practica con una cuenta demo usando fondos virtuales — sin compromiso. Cambia a dinero real desde $10 cuando estés listo.", sech:"Cómo Empezar — 3 Pasos", s1t:"Crea una Cuenta Gratis", s1d:"Solo tu email y contraseña. Tarda 2 minutos. Sin depósito requerido.", s2t:"Convierte a Dólar Digital", s2d:"Directamente desde tu teléfono, sin banco. Desde solo $10.", s3t:"Mira Crecer Tu Dinero", s3d:"Activa un plan de ahorro y recibe ganancias diarias.", c2h:"Un paso — y tu dinero<br>empieza a trabajar", c2p:"Gratis. Sin depósito. 2 minutos desde tu teléfono.", hint2:"Sin compromiso · Cancela cuando quieras · Desde $10", tr1:"Operando desde 2018", tr2:"Fondo de seguro $100M", tr3:"10M+ usuarios", tr4:"Retira cuando quieras", tr5:"Desde $10", follow:"Síguenos", disc:"WealthShift es un recurso informativo. Nada constituye asesoramiento financiero. Los instrumentos financieros conllevan riesgos.", stickycta:"Empezar Gratis →" },
-
-  pt:{ navpill:"Disponível em 170+ países", badge:"Navegador Financeiro · 2026", h1a:"Seu dinheiro está perdendo valor", h1b:"enquanto você", h1c:"não faz nada a respeito", subhead:"Mostramos a pessoas em 170+ países como proteger economias em dólares digitais — ganhar rendimentos diários, enviar transferências sem taxas e fazer o patrimônio crescer com estratégias automatizadas. Do seu celular. Grátis.", cta1:"Começar Grátis →", cta2:"▶ Ver Como Funciona", hint1:"Cadastre-se em 60 segundos · Sem depósito · A partir de $10", st1:"APY em poupança digital<br>vs 0.5% no banco", st2:"usuários<br>no mundo todo", st3:"países<br>sem restrições", st4:"fundo de seguro<br>de proteção", ct1:"Conta Poupança Bancária", cd1:"ao ano · fundos bloqueados", ct2:"Conta Poupança Digital", cd2:"APY · saque a qualquer hora", secw:"O Que Você Ganha", b1t:"Proteção contra a Inflação", b1d:"Um dólar digital sempre vale $1 — não perde valor com sua moeda local.", b2t:"Seu Dinheiro Trabalha por Você", b2d:"Planos de poupança, bots automatizados, cópia de estratégias.", b3t:"Envie Dinheiro Sem Taxas", b3d:"Envie dinheiro para qualquer país diretamente. Em vez de $40–50, pague apenas $1–2.", b4t:"Ações Globais pelo Celular", b4d:"Tesla, Apple, NVIDIA — sem corretora, sem mínimo de $25.000. A partir de $10.", b5t:"Bot Automatizado 24/7", b5d:"Configure um bot em 5 minutos — ele compra na baixa e vende na alta automaticamente.", b6t:"Experimente Sem Risco Primeiro", b6d:"Pratique com uma conta demo usando fundos virtuais — sem compromisso. Mude para dinheiro real a partir de $10 quando estiver pronto.", sech:"Como Começar — 3 Passos", s1t:"Crie uma Conta Grátis", s1d:"Apenas seu email e senha. Leva 2 minutos. Sem depósito.", s2t:"Converta para Dólar Digital", s2d:"Direto do celular, sem banco. A partir de $10.", s3t:"Veja Seu Dinheiro Crescer", s3d:"Ative um plano de poupança e receba ganhos diários.", c2h:"Um passo — e seu dinheiro<br>começa a trabalhar", c2p:"Grátis. Sem depósito. 2 minutos pelo celular.", hint2:"Sem compromisso · Cancele quando quiser · A partir de $10", tr1:"Operando desde 2018", tr2:"Fundo de seguro $100M", tr3:"10M+ usuários", tr4:"Saque a qualquer hora", tr5:"A partir de $10", follow:"Siga-nos", disc:"WealthShift é um recurso informativo. Nada constitui aconselhamento financeiro. Instrumentos financeiros envolvem riscos.", stickycta:"Começar Grátis →" },
-
-  fr:{ navpill:"Disponible dans 170+ pays", badge:"Navigateur Financier · 2026", h1a:"Votre argent perd de la valeur", h1b:"pendant que vous", h1c:"ne faites rien", subhead:"Nous montrons aux personnes de 170+ pays comment protéger leur épargne en dollars numériques — gagner des rendements quotidiens, envoyer des virements sans frais et faire fructifier leur patrimoine grâce à des stratégies automatisées. Depuis votre téléphone. Gratuitement.", cta1:"Commencer Gratuitement →", cta2:"▶ Voir Comment Ça Marche", hint1:"Inscription en 60 secondes · Sans dépôt · À partir de $10", st1:"APY sur épargne numérique<br>vs 0.5% en banque", st2:"utilisateurs<br>dans le monde", st3:"pays<br>sans restriction", st4:"fonds d'assurance<br>de protection", ct1:"Compte Épargne Bancaire", cd1:"par an · fonds bloqués", ct2:"Compte Épargne Numérique", cd2:"APY · retrait à tout moment", secw:"Ce Que Vous Obtenez", b1t:"Protection contre l'Inflation", b1d:"Un dollar numérique vaut toujours $1 — il ne perd pas de valeur avec votre monnaie locale.", b2t:"Votre Argent Travaille pour Vous", b2d:"Plans d'épargne, bots automatisés, copie de stratégies.", b3t:"Envoyez de l'Argent Sans Frais", b3d:"Envoyez de l'argent dans n'importe quel pays directement. Au lieu de $40–50, payez seulement $1–2.", b4t:"Actions Mondiales Depuis Votre Téléphone", b4d:"Tesla, Apple, NVIDIA — sans courtier, sans minimum de $25 000. À partir de $10.", b5t:"Bot Automatisé 24/7", b5d:"Configurez un bot en 5 minutes — il achète bas et vend haut automatiquement.", b6t:"Essayez Sans Risque D'abord", b6d:"Pratiquez avec un compte démo en fonds virtuels — sans engagement. Passez à l'argent réel à partir de $10 quand vous êtes prêt.", sech:"Comment Commencer — 3 Étapes", s1t:"Créez un Compte Gratuit", s1d:"Juste votre email et mot de passe. Prend 2 minutes. Sans dépôt requis.", s2t:"Convertissez en Dollar Numérique", s2d:"Directement depuis votre téléphone, sans banque. À partir de $10.", s3t:"Regardez Votre Argent Croître", s3d:"Activez un plan d'épargne et recevez des gains quotidiens.", c2h:"Une étape — et votre argent<br>commence à travailler", c2p:"Gratuit. Sans dépôt. 2 minutes depuis votre téléphone.", hint2:"Sans engagement · Annulez quand vous voulez · À partir de $10", tr1:"En activité depuis 2018", tr2:"Fonds d'assurance $100M", tr3:"10M+ utilisateurs", tr4:"Retrait à tout moment", tr5:"À partir de $10", follow:"Suivez-nous", disc:"WealthShift est une ressource informative. Rien ne constitue un conseil financier. Les instruments financiers comportent des risques.", stickycta:"Commencer Gratuitement →" },
-
-  id:{ navpill:"Tersedia di 170+ negara", badge:"Navigator Keuangan · 2026", h1a:"Uang Anda kehilangan nilai", h1b:"sementara Anda", h1c:"tidak melakukan apa-apa", subhead:"Kami menunjukkan kepada orang-orang di 170+ negara cara melindungi tabungan dalam dolar digital — mendapatkan penghasilan harian, mengirim transfer tanpa biaya, dan menumbuhkan kekayaan dengan strategi otomatis. Dari ponsel Anda. Gratis.", cta1:"Mulai Gratis →", cta2:"▶ Lihat Cara Kerjanya", hint1:"Daftar dalam 60 detik · Tanpa setoran · Mulai dari $10", st1:"APY tabungan digital<br>vs 0.5% di bank", st2:"pengguna<br>di seluruh dunia", st3:"negara<br>tanpa batasan", st4:"dana asuransi<br>perlindungan pengguna", ct1:"Rekening Tabungan Bank", cd1:"per tahun · dana terkunci", ct2:"Rekening Tabungan Digital", cd2:"APY · tarik kapan saja", secw:"Apa yang Anda Dapatkan", b1t:"Perlindungan dari Inflasi", b1d:"Dolar digital selalu senilai $1 — tidak kehilangan nilai bersama mata uang lokal Anda.", b2t:"Uang Anda Bekerja untuk Anda", b2d:"Rencana tabungan, bot otomatis, salin strategi.", b3t:"Kirim Uang Tanpa Biaya", b3d:"Kirim uang ke negara mana pun secara langsung. Alih-alih biaya $40–50, bayar hanya $1–2.", b4t:"Saham Global dari Ponsel Anda", b4d:"Tesla, Apple, NVIDIA — tanpa broker, tanpa minimum $25.000. Mulai $10.", b5t:"Bot Otomatis 24/7", b5d:"Atur bot dalam 5 menit — secara otomatis membeli rendah dan menjual tinggi.", b6t:"Coba Tanpa Risiko Dulu", b6d:"Berlatih dengan akun demo menggunakan dana virtual — tanpa komitmen. Beralih ke uang nyata mulai $10 saat siap.", sech:"Cara Mulai — 3 Langkah", s1t:"Buat Akun Gratis", s1d:"Hanya email dan kata sandi. Butuh 2 menit. Tanpa setoran.", s2t:"Konversi ke Dolar Digital", s2d:"Langsung dari ponsel, tanpa bank. Mulai dari $10.", s3t:"Saksikan Uang Anda Tumbuh", s3d:"Aktifkan rencana tabungan dan terima penghasilan harian.", c2h:"Satu langkah — dan uang Anda<br>mulai bekerja", c2p:"Gratis. Tanpa setoran. 2 menit dari ponsel Anda.", hint2:"Tanpa komitmen · Batalkan kapan saja · Mulai $10", tr1:"Beroperasi sejak 2018", tr2:"Dana asuransi $100M", tr3:"10M+ pengguna", tr4:"Tarik kapan saja", tr5:"Mulai $10", follow:"Ikuti kami", disc:"WealthShift adalah sumber informasi. Tidak ada yang merupakan saran keuangan. Instrumen keuangan mengandung risiko.", stickycta:"Mulai Gratis →" },
-
-  zh:{ navpill:"支持170+个国家", badge:"财务导航 · 2026", h1a:"您的钱正在贬值", h1b:"而您", h1c:"什么都没做", subhead:"我们向170多个国家的人们展示如何通过数字美元保护储蓄——每日获得收益、免手续费转账，并通过自动化策略积累财富。从您的手机开始。免费。", cta1:"免费开始 →", cta2:"▶ 观看运作方式", hint1:"60秒注册 · 无需存款 · 从$10起", st1:"数字储蓄APY<br>vs 银行0.5%", st2:"全球<br>用户", st3:"国家<br>无限制", st4:"用户保护<br>保险基金", ct1:"银行储蓄账户", cd1:"每年 · 资金被锁定", ct2:"数字储蓄账户", cd2:"APY · 随时提取", secw:"您将获得什么", b1t:"抵御通货膨胀", b1d:"数字美元始终等于$1——不会随本地货币贬值。", b2t:"让您的钱为您工作", b2d:"储蓄计划、自动机器人、策略复制。", b3t:"免费转账汇款", b3d:"直接向任何国家汇款。$40-50的手续费变成$1-2。", b4t:"从手机购买全球股票", b4d:"特斯拉、苹果、英伟达——从$10起。", b5t:"24/7自动机器人", b5d:"5分钟设置机器人——自动低买高卖。", b6t:"无风险先试用", b6d:"使用虚拟资金练习，无承诺。准备好后从$10实际资金开始。", sech:"如何开始 — 3步", s1t:"创建免费账户", s1d:"只需邮箱和密码。2分钟完成。无需存款。", s2t:"转换为数字美元", s2d:"直接从手机操作，无需银行。从$10起。", s3t:"见证您的财富增长", s3d:"激活储蓄计划，每日获得收益。", c2h:"一步——让您的钱<br>开始为您工作", c2p:"免费。无需存款。手机2分钟。", hint2:"无承诺 · 随时取消 · 从$10起", tr1:"2018年起运营", tr2:"$1亿保险基金", tr3:"1000万+用户", tr4:"随时提取", tr5:"从$10起", follow:"关注我们", disc:"WealthShift仅作信息资源。不构成财务建议。金融工具存在风险。", stickycta:"免费开始 →" },
-
-  ja:{ navpill:"170カ国以上で利用可能", badge:"ファイナンシャルナビゲーター · 2026", h1a:"あなたのお金は価値を失っています", h1b:"何もしていない", h1c:"今すぐ変えましょう", subhead:"170カ国以上の人々がデジタルドルで資産を守る方法をご紹介します。毎日収益を得て、手数料なしで送金し、自動化戦略で資産を増やす。スマホから。無料で。", cta1:"無料で始める →", cta2:"▶ 仕組みを見る", hint1:"60秒で登録 · 入金不要 · $10から", st1:"デジタル貯蓄APY<br>vs 銀行0.5%", st2:"世界中の<br>ユーザー", st3:"対応国<br>制限なし", st4:"ユーザー保護<br>保険基金", ct1:"銀行の普通預金", cd1:"年利 · 資金拘束あり", ct2:"デジタル預金口座", cd2:"APY · いつでも引き出し可", secw:"あなたが得るもの", b1t:"インフレからの保護", b1d:"デジタルドルは常に$1。現地通貨と一緒に価値が下がりません。", b2t:"お金があなたのために働く", b2d:"貯蓄プラン、自動ボット、戦略コピー。", b3t:"手数料なしで送金", b3d:"どの国にも直接送金できます。$40〜50の手数料がわずか$1〜2に。", b4t:"スマホで世界の株式", b4d:"テスラ、アップル、エヌビディア — $10からアプリで世界市場へ。", b5t:"24時間自動ボット", b5d:"5分設定するだけ — 自動で安く買って高く売ってくれます。", b6t:"リスクなしでまず試す", b6d:"仮想資金のデモ口座で練習 — コミットメントなし。準備ができたら$10の実資金で。", sech:"始め方 — 3ステップ", s1t:"無料アカウントを作成", s1d:"メールとパスワードだけ。2分で完了。入金不要。", s2t:"デジタルドルに変換", s2d:"スマホから直接、銀行なしで。$10から。", s3t:"お金が増えるのを見守る", s3d:"貯蓄プランを有効化して毎日収益を受け取る。", c2h:"一歩踏み出すだけで<br>お金が働き始めます", c2p:"無料。入金不要。スマホで2分。", hint2:"コミットメントなし · いつでもキャンセル · $10から", tr1:"2018年から運営", tr2:"$1億保険基金", tr3:"1000万人以上のユーザー", tr4:"いつでも引き出し可", tr5:"$10から", follow:"フォローする", disc:"WealthShiftは情報リソースです。金融アドバイスではありません。金融商品にはリスクが伴います。", stickycta:"無料で始める →" },
-
-  vi:{ navpill:"Có mặt tại 170+ quốc gia", badge:"Dẫn Đường Tài Chính · 2026", h1a:"Tiền của bạn đang mất giá trị", h1b:"trong khi bạn", h1c:"không làm gì cả", subhead:"Chúng tôi hướng dẫn người dùng ở 170+ quốc gia bảo vệ tiết kiệm bằng đô la kỹ thuật số — kiếm lợi nhuận hàng ngày, gửi tiền không phí, và gia tăng tài sản qua chiến lược tự động. Từ điện thoại của bạn. Miễn phí.", cta1:"Bắt Đầu Miễn Phí →", cta2:"▶ Xem Cách Hoạt Động", hint1:"Đăng ký trong 60 giây · Không cần nạp tiền · Từ $10", st1:"APY tiết kiệm kỹ thuật số<br>vs 0.5% ngân hàng", st2:"người dùng<br>toàn thế giới", st3:"quốc gia<br>không hạn chế", st4:"quỹ bảo hiểm<br>bảo vệ người dùng", ct1:"Tài Khoản Tiết Kiệm Ngân Hàng", cd1:"mỗi năm · tiền bị khóa", ct2:"Tài Khoản Tiết Kiệm Kỹ Thuật Số", cd2:"APY · rút bất cứ lúc nào", secw:"Bạn Nhận Được Gì", b1t:"Bảo Vệ Khỏi Lạm Phát", b1d:"Đô la kỹ thuật số luôn bằng $1 — không mất giá theo tiền tệ địa phương.", b2t:"Tiền Của Bạn Tự Sinh Lời", b2d:"Kế hoạch tiết kiệm, bot tự động, sao chép chiến lược.", b3t:"Gửi Tiền Không Phí", b3d:"Gửi tiền đến bất kỳ quốc gia nào trực tiếp. Thay vì phí $40–50, chỉ trả $1–2.", b4t:"Cổ Phiếu Toàn Cầu Từ Điện Thoại", b4d:"Tesla, Apple, NVIDIA — Truy cập thị trường toàn cầu từ $10.", b5t:"Bot Tự Động 24/7", b5d:"Cài đặt bot trong 5 phút — tự động mua thấp bán cao.", b6t:"Thử Không Rủi Ro Trước", b6d:"Luyện tập với tài khoản demo bằng vốn ảo — không cam kết. Chuyển sang tiền thật từ $10 khi sẵn sàng.", sech:"Cách Bắt Đầu — 3 Bước", s1t:"Tạo Tài Khoản Miễn Phí", s1d:"Chỉ cần email và mật khẩu. Mất 2 phút. Không cần nạp tiền.", s2t:"Chuyển Đổi Sang Đô La Kỹ Thuật Số", s2d:"Trực tiếp từ điện thoại, không cần ngân hàng. Từ $10.", s3t:"Xem Tiền Của Bạn Tăng", s3d:"Kích hoạt kế hoạch tiết kiệm và nhận thu nhập hàng ngày.", c2h:"Một bước — và tiền của bạn<br>bắt đầu sinh lời", c2p:"Miễn phí. Không cần nạp. 2 phút từ điện thoại.", hint2:"Không cam kết · Hủy bất cứ lúc nào · Từ $10", tr1:"Hoạt động từ 2018", tr2:"Quỹ bảo hiểm $100M", tr3:"10M+ người dùng", tr4:"Rút bất cứ lúc nào", tr5:"Từ $10", follow:"Theo dõi chúng tôi", disc:"WealthShift là nguồn thông tin. Không phải lời khuyên tài chính. Công cụ tài chính có rủi ro.", stickycta:"Bắt Đầu Miễn Phí →" },
-
-  ar:{ navpill:"متاح في 170+ دولة", badge:"المرشد المالي · 2026", h1a:"أموالك تفقد قيمتها", h1b:"بينما أنت", h1c:"لا تفعل شيئاً", subhead:"نُريك كيف يحمي الناس في 170+ دولة مدخراتهم بالدولار الرقمي — كسب عوائد يومية وإرسال تحويلات بدون رسوم وتنمية الثروة باستراتيجيات آلية. من هاتفك. مجاناً.", cta1:"ابدأ مجاناً ←", cta2:"▶ شاهد كيف يعمل", hint1:"سجّل في 60 ثانية · بدون إيداع · من $10", st1:"APY على المدخرات الرقمية<br>مقابل 0.5% في البنك", st2:"مستخدم<br>حول العالم", st3:"دولة<br>بلا قيود", st4:"صندوق تأمين<br>حماية المستخدمين", ct1:"حساب توفير بنكي", cd1:"سنوياً · الأموال مجمّدة", ct2:"حساب توفير رقمي", cd2:"APY · سحب في أي وقت", secw:"ما الذي ستحصل عليه", b1t:"حماية من التضخم", b1d:"الدولار الرقمي دائماً يساوي $1 — لا يفقد قيمته مع العملة المحلية.", b2t:"أموالك تعمل من أجلك", b2d:"خطط الادخار والروبوتات الآلية ونسخ الاستراتيجيات.", b3t:"أرسل الأموال بدون رسوم", b3d:"أرسل الأموال لأي دولة مباشرة. بدلاً من $40-50 رسوم، ادفع $1-2 فقط.", b4t:"أسهم عالمية من هاتفك", b4d:"تسلا وآبل وإنفيديا — ابدأ من $10.", b5t:"روبوت آلي 24/7", b5d:"اضبط الروبوت في 5 دقائق — يشتري عند الانخفاض ويبيع عند الارتفاع تلقائياً.", b6t:"جرّب بدون مخاطر أولاً", b6d:"تدرّب بحساب تجريبي بأموال افتراضية — بدون التزام. انتقل للمال الحقيقي من $10 عندما تكون جاهزاً.", sech:"كيف تبدأ — 3 خطوات", s1t:"أنشئ حساباً مجانياً", s1d:"بريدك الإلكتروني وكلمة مرور فقط. يستغرق دقيقتين. بدون إيداع.", s2t:"حوّل إلى دولار رقمي", s2d:"مباشرة من هاتفك، بدون بنك. من $10.", s3t:"شاهد أموالك تنمو", s3d:"فعّل خطة الادخار واستلم أرباحاً يومية.", c2h:"خطوة واحدة — وأموالك<br>تبدأ العمل من أجلك", c2p:"مجاناً. بدون إيداع. دقيقتان من هاتفك.", hint2:"بدون التزام · إلغاء في أي وقت · من $10", tr1:"نعمل منذ 2018", tr2:"صندوق تأمين $100M", tr3:"أكثر من 10M مستخدم", tr4:"سحب في أي وقت", tr5:"من $10", follow:"تابعنا", disc:"WealthShift مورد معلوماتي. لا يُعدّ نصيحة مالية. الأدوات المالية تنطوي على مخاطر.", stickycta:"ابدأ مجاناً ←" },
-
-  de:{ navpill:"Verfügbar in 170+ Ländern", badge:"Finanznavigator · 2026", h1a:"Ihr Geld verliert an Wert", h1b:"während Sie", h1c:"nichts dagegen tun", subhead:"Wir zeigen Menschen in 170+ Ländern, wie sie Ersparnisse in digitalen Dollar schützen — tägliche Erträge erzielen, Überweisungen ohne Gebühren senden und Vermögen durch automatisierte Strategien aufbauen. Von Ihrem Smartphone. Kostenlos.", cta1:"Kostenlos starten →", cta2:"▶ So funktioniert es", hint1:"Registrierung in 60 Sekunden · Keine Einzahlung · Ab $10", st1:"APY auf digitale Ersparnisse<br>vs 0,5% bei der Bank", st2:"Nutzer<br>weltweit", st3:"Länder<br>ohne Einschränkungen", st4:"Nutzer-Schutz-<br>Versicherungsfonds", ct1:"Bankkonto Sparkonto", cd1:"pro Jahr · Geld gesperrt", ct2:"Digitales Sparkonto", cd2:"APY · jederzeit abheben", secw:"Was Sie bekommen", b1t:"Inflationsschutz", b1d:"Ein digitaler Dollar entspricht immer $1 — verliert nicht an Wert wie Ihre Landeswährung.", b2t:"Ihr Geld arbeitet für Sie", b2d:"Sparpläne, automatisierte Bots, Strategiekopieren.", b3t:"Geld ohne Gebühren senden", b3d:"Senden Sie Geld in jedes Land direkt. Statt $40–50 Gebühren nur $1–2.", b4t:"Globale Aktien vom Smartphone", b4d:"Tesla, Apple, NVIDIA — Weltmärkte ab $10.", b5t:"Automatisierter Bot 24/7", b5d:"Bot in 5 Minuten einrichten — kauft automatisch niedrig und verkauft hoch.", b6t:"Erst risikofrei testen", b6d:"Üben Sie mit einem Demo-Konto mit virtuellem Geld — kein Engagement. Wechseln Sie ab $10 zum echten Geld, wenn Sie bereit sind.", sech:"Wie man anfängt — 3 Schritte", s1t:"Kostenloses Konto erstellen", s1d:"Nur E-Mail und Passwort. Dauert 2 Minuten. Keine Einzahlung.", s2t:"In digitalen Dollar umwandeln", s2d:"Direkt vom Smartphone, ohne Bank. Ab $10.", s3t:"Zusehen wie Ihr Geld wächst", s3d:"Sparplan aktivieren und täglich Erträge erhalten.", c2h:"Ein Schritt — und Ihr Geld<br>beginnt für Sie zu arbeiten", c2p:"Kostenlos. Keine Einzahlung. 2 Minuten vom Smartphone.", hint2:"Kein Engagement · Jederzeit kündbar · Ab $10", tr1:"In Betrieb seit 2018", tr2:"$100M Versicherungsfonds", tr3:"10M+ Nutzer", tr4:"Jederzeit abheben", tr5:"Ab $10", follow:"Folgen Sie uns", disc:"WealthShift ist eine Informationsressource. Keine Finanzberatung. Finanzinstrumente tragen Risiken.", stickycta:"Kostenlos starten →" },
-
-  tr:{ navpill:"170+ ülkede mevcut", badge:"Finansal Rehber · 2026", h1a:"Paranız değer kaybediyor", h1b:"siz", h1c:"hiçbir şey yapmadan", subhead:"170'ten fazla ülkedeki insanlara dijital dolarla birikimlerini nasıl koruyacaklarını gösteriyoruz — günlük getiri elde edin, ücretsiz transfer gönderin ve otomatik stratejilerle servetinizi büyütün. Telefonunuzdan. Ücretsiz.", cta1:"Ücretsiz Başla →", cta2:"▶ Nasıl Çalıştığını İzle", hint1:"60 saniyede kayıt · Depozito gerekmez · $10'dan başlayarak", st1:"Dijital tasarruflarda APY<br>vs bankada %0.5", st2:"dünya genelinde<br>kullanıcı", st3:"ülke<br>kısıtlama yok", st4:"kullanıcı koruma<br>sigorta fonu", ct1:"Banka Tasarruf Hesabı", cd1:"yıllık · fonlar kilitli", ct2:"Dijital Tasarruf Hesabı", cd2:"APY · istediğin zaman çek", secw:"Ne Elde Edersiniz", b1t:"Enflasyona Karşı Koruma", b1d:"Dijital dolar her zaman $1'a eşittir — yerel paranızla birlikte değer kaybetmez.", b2t:"Paranız Sizin İçin Çalışır", b2d:"Tasarruf planları, otomatik botlar, strateji kopyalama.", b3t:"Ücretsiz Para Gönder", b3d:"Herhangi bir ülkeye doğrudan para gönderin. $40-50 ücret yerine sadece $1-2.", b4t:"Telefonunuzdan Global Hisseler", b4d:"Tesla, Apple, NVIDIA — $10'dan başlayarak.", b5t:"7/24 Otomatik Bot", b5d:"5 dakikada bot kur — düşüşte otomatik al, yükselişte sat.", b6t:"Önce Risksiz Dene", b6d:"Sanal para ile demo hesabında pratik yap — taahhüt yok. Hazır olduğunda $10'dan gerçek parayla başla.", sech:"Nasıl Başlanır — 3 Adım", s1t:"Ücretsiz Hesap Oluştur", s1d:"Sadece e-posta ve şifre. 2 dakika sürer. Depozito gerekmez.", s2t:"Dijital Dolara Dönüştür", s2d:"Doğrudan telefonunuzdan, banka olmadan. $10'dan.", s3t:"Paranızın Büyümesini İzleyin", s3d:"Tasarruf planını etkinleştir ve günlük kazanç al.", c2h:"Bir adım — ve paranız<br>sizin için çalışmaya başlar", c2p:"Ücretsiz. Depozito yok. Telefondan 2 dakika.", hint2:"Taahhüt yok · İstediğin zaman iptal et · $10'dan", tr1:"2018'den beri faaliyet", tr2:"$100M sigorta fonu", tr3:"10M+ kullanıcı", tr4:"İstediğin zaman çek", tr5:"$10'dan", follow:"Bizi takip edin", disc:"WealthShift bir bilgi kaynağıdır. Finansal tavsiye değildir. Finansal araçlar risk taşır.", stickycta:"Ücretsiz Başla →" }
+  en:{ navpill:"Available in 170+ countries", proj5y:"over 5 yrs", badge:"Financial Navigator · 2026", h1a:"Your money is losing value", h1b:"while you", subhead:"We show people in 170+ countries how to protect savings in a digital dollar — earn daily returns, send transfers without fees, and grow wealth with automated strategies. From your phone. For free.", cta1:"Get Started Free →", cta2:"▶ See How It Works", hint1:"Sign up in 60 seconds · No deposit required · Start from $10", st1:"APY on digital savings<br>vs 0.5% at the bank", st2:"users<br>worldwide", st3:"countries<br>no restrictions", st4:"user protection<br>insurance fund", apytip:"APY (Annual Percentage Yield) reflects estimated annual return with compounding. Rates vary by product and are not guaranteed.", float1:"today", float2:"last 10 days", float3s:"No bank", float3:"170+ countries", phequity:"Total Equity", phaccrued:"Interest Accrued", phyday:"Yesterday's Interest", phgoearn:"Go to Earn", phfut:"Futures Earn", phhold:"Hold &amp; Earn", phstake:"SOL Staking", phautoearn:"Auto-Earn, Up to <b>15%</b> APR", phautosub:"Put idle assets to work", phstart:"Start", phrec:"Recommended", phrecsub:"Put your USDT to work — daily payouts, withdraw anytime.", phcrypto:"Crypto", phestapr:"Est. APR", phflex:"Flexible", phhome:"Home", phmkts:"Markets", phtrade:"Trade", phfutures:"Futures", phwallets:"Wallets", phcaption:"Live preview of the app experience. Actual rates vary and are not guaranteed.", ct1:"Bank Savings Account", cd1:"per year · funds locked", ct2:"Digital Savings Account", cd2:"APY · withdraw anytime", compdisc:"*Illustrative comparison. Rates vary by product and are not guaranteed.", secw:"What You Get", b1t:"Protection from Inflation", b1d:"A digital dollar always equals $1 — it doesn't lose value with your local currency. Your savings hold their purchasing power.", b2t:"Your Money Works for You", b2d:"Savings plans, automated bots, strategy copying — earnings hit your account every day, no manual work or expertise needed.", b3t:"Send Money Without Fees", b3d:"Send money to any country directly — no banks, no middlemen. Instead of $40–50 in fees, pay just $1–2. Your family gets almost everything.", b4t:"Global Stocks From Your Phone", b4d:"Tesla, Apple, NVIDIA — no broker, no $25,000 minimum. Access global markets from the app, starting from $10.", b5t:"Automated Bot 24/7", b5d:"Set up a bot in 5 minutes — it buys low and sells high automatically while you live your life. No monitoring required.", b6t:"Try Risk-Free First", b6d:"Practice with a demo account using virtual funds — no commitment. Switch to real money starting from $10 when you're ready.", b2s:"Daily", b4s:"From $10", b5s:"24/7", b6s:"$0 risk", t1q:"\"I used to lose $45 every month sending money to my family through the bank. Now I pay $2 and almost everything arrives. After a year — $540 saved.\"", t1n:"Maria", t1p:"Spain · Sends money home", t2q:"\"I saved for 3 years. The lira lost half its value. I switched my savings to a digital dollar — now they hold their value and earn something every day.\"", t2n:"Ahmet", t2p:"Turkey · Protects savings", t3q:"\"I was tired of my bank paying 0.5%. Moved part of my savings here — earnings hit my account every day. Small at first, but it adds up, and I can withdraw anytime.\"", t3n:"Anna", t3p:"Germany · Earns daily", tdisc:"*Based on customer feedback. Individual results vary. Not financial advice.", testeye:"★★★★★ · Real Users", testh2:"Why people stay with us", t4q:"\"I wanted to do something with my savings without learning to trade. I picked a top performer with years of history, set my limit — the system mirrors every move. Small daily gains, no monitoring.\"", t4n:"Lisa", t4p:"Netherlands · Copy trades", t5q:"\"Watched Tesla and NVIDIA for years but couldn't open a broker account. Now I follow them from my phone, starting at $50. Caught the recent AI run-up too.\"", t5n:"David", t5p:"UK · Stocks on phone", t6q:"\"Set up a bot in 10 minutes — buys low, sells high while I sleep. Wake up to dozens of small wins. No graphs to watch, no time to spend.\"", t6n:"Marco", t6p:"Italy · Grid bot", secuse:"Three Ways to Use It", u1t:"Withdraw to your card", u1d:"Direct payout to Visa or Mastercard. Available 24/7, processed in minutes. No lock-up.", u2t:"Send anywhere", u2d:"Direct transfer to any country — no banks, no middlemen. $1–2 fee instead of $40–50.", u3t:"Keep it working", u3d:"Leave it as a digital dollar — daily payouts add up while you decide your next step.", seccalc:"See What Your Savings Could Become", calcamt:"Your savings", calcyrs:"Time period", calcyrsuf:"years", calcbank:"Bank (0.5%)", calcdig:"Digital (~15%)", calcdiff:"Your potential gain:", calcnote:"*Illustrative projection based on theoretical compounding at sample rates. Actual rates and results vary, are not guaranteed, and depend on product, market, and other conditions. Not financial advice.", calccta:"Start Earning Today →", calcctahint:"Free · No deposit · From $10", sech:"How to Start — 3 Steps", s1t:"Create a Free Account", s1d:"Just your email and password. Takes 2 minutes. No deposit required.", s2t:"Convert to a Digital Dollar", s2d:"Directly from your phone, without a bank. Start from just $10.", s3t:"Watch Your Money Grow", s3d:"Activate a savings plan and receive daily earnings. No manual work needed.", secfaq:"Frequently Asked Questions", faq1q:"Is this a scheme or pyramid?", faq1a:"No. The underlying platform is one of the largest digital asset exchanges in the world, operating since 2018 with more than 10 million users across 170+ countries. It earns from trading commissions, not new sign-ups. You can deposit, withdraw, and close your account at any time.", faq2q:"How do I withdraw my money?", faq2a:"Withdrawal is available 24/7 — directly to your bank card, bank account, or another wallet. There is no lock-up period on savings, and the average withdrawal is processed within minutes. Fees depend on the network and payout method.", faq3q:"Is the digital dollar safe? Why does it stay at $1?", faq3a:"A digital dollar (a regulated stablecoin like USDT or USDC) is backed 1-to-1 by real cash and short-term US treasury reserves, audited by independent firms. That backing is what keeps its value pegged to $1 regardless of local currency movements.", faq4q:"What about taxes?", faq4a:"Tax rules depend on your country. Most jurisdictions treat digital-asset income similarly to investment income. The platform provides a full transaction history you can export for tax reporting. We recommend consulting a local tax advisor for your specific situation.", faq5q:"What's the minimum to start?", faq5a:"$10. Registration is free and the demo mode lets you try everything with virtual money first. There are no monthly fees, no obligations, and no penalties for closing your account.", faq6q:"How is my money protected?", faq6a:"A digital dollar (regulated stablecoin) is backed 1:1 by real cash and short-term US treasury reserves — its value stays at $1 regardless of market movements. The platform is protected by a $100M user-protection insurance fund, two-factor authentication, cold storage for the majority of assets, and over 7 years of operating history serving 10M+ users worldwide. A demo mode lets you practice everything with virtual funds before using real money. Higher-risk products like leveraged trading are entirely optional — the savings and transfer products covered here are designed to keep your principal stable. As with any financial service, only commit what you can manage.", c2h:"One step — and your money<br>starts working for you", c2p:"Free. No deposit required. 2 minutes from your phone.", hint2:"No commitment · Cancel anytime · From $10", tr1:"Operating since 2018", tr2:"$100M insurance fund", tr3:"10M+ users", tr4:"Withdraw anytime", tr5:"From $10", follow:"Follow us", disc:"WealthShift is an informational resource only. Nothing on this page constitutes financial advice or an investment recommendation. All financial instruments carry risk. Results may vary. Please review the platform's terms and conditions before getting started.", stickycta:"Get Started →", stickymeta:"10M+ joined", stickysub:"From $10 · 60 sec signup" },
+  ru:{ navpill:"Доступно в 170+ странах", badge:"Финансовый навигатор · 2026", h1a:"Ваши деньги теряют ценность", h1b:"пока вы", subhead:"Мы показываем, как люди в 170+ странах защищают сбережения в цифровом долларе — получают ежедневные начисления, отправляют переводы без комиссий и зарабатывают на автоматических стратегиях. Прямо с телефона. Бесплатно.", cta1:"Начать бесплатно →", cta2:"▶ Посмотреть как работает", hint1:"Регистрация за 60 секунд · Без обязательных вложений · От $10", st1:"APY на цифровом вкладе<br>vs 0.5% в банке", st2:"пользователей<br>по всему миру", st3:"стран<br>без ограничений", st4:"страховой фонд<br>защиты средств", proj5y:"за 5 лет", apytip:"APY (Annual Percentage Yield) — расчётная годовая доходность с учётом капитализации. Ставки зависят от продукта и не гарантированы.", float1:"сегодня", float2:"за 10 дней", float3s:"Без банка", float3:"170+ стран", phequity:"Общий баланс", phaccrued:"Начислено сегодня", phyday:"Начислено вчера", phgoearn:"Перейти в Earn", phfut:"Futures Earn", phhold:"Hold &amp; Earn", phstake:"SOL Стейкинг", phautoearn:"Auto-Earn, до <b>15%</b> APR", phautosub:"Активы работают сами", phstart:"Запустить", phrec:"Рекомендуем", phrecsub:"Положи USDT в работу — ежедневные начисления, вывод в любой момент.", phcrypto:"Актив", phestapr:"Ожидаемый APR", phflex:"Гибкий", phhome:"Главная", phmkts:"Рынки", phtrade:"Трейд", phfutures:"Фьючерсы", phwallets:"Кошелёк", phcaption:"Превью интерфейса приложения. Реальные ставки могут отличаться и не гарантированы.", ct1:"Банковский вклад", cd1:"годовых · деньги заморожены", ct2:"Цифровой вклад", cd2:"APY · вывод в любой момент", compdisc:"*Иллюстративное сравнение. Ставки зависят от продукта и не гарантированы.", secw:"Что вы получаете", b1t:"Защита от инфляции", b1d:"Цифровой доллар всегда равен $1 — не обесценивается вместе с местной валютой. Сбережения сохраняют покупательную способность.", b2t:"Деньги работают сами", b2d:"Накопительные планы, автоматические роботы, копирование стратегий — доход начисляется каждый день без вашего участия.", b3t:"Переводы без потерь", b3d:"Отправляйте деньги в любую страну напрямую. Вместо $40–50 комиссии банку — $1–2 на любую сумму. Семья получает почти всё.", b4t:"Акции с телефона", b4d:"Tesla, Apple, NVIDIA — без брокера, без минимума $25 000. Доступ к мировым рынкам из приложения, от $10.", b5t:"Автоматический робот 24/7", b5d:"Настройте бота за 5 минут — он покупает при падении и продаёт при росте автоматически, пока вы занимаетесь своей жизнью.", b6t:"Попробуйте без риска", b6d:"Демо-режим с виртуальными деньгами — практикуйтесь без обязательств. Переключитесь на реальные деньги от $10, когда будете готовы.", b2s:"Каждый день", b4s:"От $10", b5s:"24/7", b6s:"$0 риск", t1q:"«Каждый месяц теряла $45 на переводах семье через банк. Сейчас плачу $2 — и почти всё доходит. За год — $540 сэкономлено.»", t1n:"Мария", t1p:"Испания · Отправляет деньги домой", t2q:"«Откладывал 3 года. Лира обесценилась вдвое. Перевёл сбережения в цифровой доллар — теперь они держат ценность и каждый день что-то приносят.»", t2n:"Ахмет", t2p:"Турция · Защищает сбережения", t3q:"«Надоело что банк платит 0.5%. Перевела часть сбережений сюда — каждый день что-то начисляется. Сначала немного, но накапливается — и в любой момент могу снять.»", t3n:"Анна", t3p:"Германия · Получает ежедневно", tdisc:"*На основе отзывов клиентов. Индивидуальные результаты могут отличаться. Не является финансовым советом.", testeye:"★★★★★ · Реальные пользователи", testh2:"Почему люди остаются с нами", t4q:"«Хотела что-то делать со сбережениями, не учась торговать. Выбрала топ-трейдера с многолетней историей, поставила лимит — система копирует каждую сделку. Небольшие ежедневные начисления, ноль наблюдения.»", t4n:"Лиза", t4p:"Голландия · Copy trades", t5q:"«Годами следил за Tesla и NVIDIA, но не мог открыть брокерский счёт. Теперь работаю с ними с телефона, начал с $50. И последнюю AI-волну не упустил.»", t5n:"Дэвид", t5p:"Великобритания · Акции с телефона", t6q:"«Настроил бота за 10 минут — покупает на падении, продаёт на росте пока я сплю. Просыпаюсь — десятки мелких побед. Без графиков и без времени.»", t6n:"Марко", t6p:"Италия · Grid bot", secuse:"Три способа использовать", u1t:"Вывод на карту", u1d:"Прямая выплата на Visa или Mastercard. 24/7, за несколько минут. Без блокировок.", u2t:"Переводы куда угодно", u2d:"Прямой перевод в любую страну — без банков, без посредников. $1–2 вместо $40–50 комиссии.", u3t:"Пусть работают", u3d:"Оставьте как цифровой доллар — ежедневные начисления накапливаются, пока вы решаете следующий шаг.", seccalc:"Посмотрите, во что превратятся ваши сбережения", calcamt:"Ваши сбережения", calcyrs:"Срок", calcyrsuf:"лет", calcbank:"Банк (0.5%)", calcdig:"Цифровой (~15%)", calcdiff:"Ваша потенциальная выгода:", calcnote:"*Иллюстративный расчёт с теоретической капитализацией по примерным ставкам. Реальные ставки и результаты зависят от продукта, рынка и других условий, могут отличаться и не гарантированы. Не является финансовым советом.", calccta:"Начать зарабатывать →", calcctahint:"Бесплатно · Без вложений · От $10", sech:"Как начать — 3 шага", s1t:"Создайте бесплатный аккаунт", s1d:"Только email и пароль. Занимает 2 минуты. Никаких обязательных вложений.", s2t:"Конвертируйте в цифровой доллар", s2d:"Прямо с телефона, без банка и без ограничений. От $10.", s3t:"Наблюдайте как деньги растут", s3d:"Активируйте накопительный план — и получайте ежедневные начисления. Никакой ручной работы.", secfaq:"Частые вопросы", faq1q:"Это не пирамида и не схема?", faq1a:"Нет. За сервисом стоит одна из крупнейших мировых криптобирж, работающая с 2018 года и обслуживающая более 10 млн пользователей в 170+ странах. Платформа зарабатывает на комиссиях за сделки, а не на привлечении новых пользователей. Вы можете вносить, выводить деньги и закрыть счёт в любой момент.", faq2q:"Как вывести деньги?", faq2a:"Вывод доступен 24/7 — на банковскую карту, счёт или другой кошелёк. Накопительные продукты не блокируют средства, среднее время вывода — несколько минут. Комиссии зависят от сети и способа выплаты.", faq3q:"Цифровой доллар безопасен? Почему он всегда $1?", faq3a:"Цифровой доллар (регулируемый стейблкоин типа USDT или USDC) обеспечен 1-к-1 реальными деньгами и краткосрочными гособлигациями США, что подтверждается независимыми аудитами. Именно это обеспечение удерживает курс на $1 независимо от движений местных валют.", faq4q:"А что с налогами?", faq4a:"Налоговые правила зависят от вашей страны. В большинстве юрисдикций доход от цифровых активов облагается как инвестиционный. Платформа предоставляет полную историю операций для отчётности. Рекомендуем проконсультироваться с местным налоговым консультантом.", faq5q:"Какой минимум для старта?", faq5a:"$10. Регистрация бесплатна, демо-режим позволяет попробовать всё на виртуальных деньгах. Нет ежемесячных платежей, обязательств и штрафов за закрытие счёта.", faq6q:"Как защищены мои деньги?", faq6a:"Цифровой доллар (регулируемый стейблкоин) обеспечен 1-к-1 реальными деньгами и краткосрочными гособлигациями США — его стоимость остаётся $1 независимо от движений рынка. Платформу защищают: страховой фонд защиты пользователей $100M, двухфакторная аутентификация, холодное хранение большинства активов и 7+ лет работы с 10M+ пользователей по всему миру. Демо-режим позволяет попрактиковаться с виртуальными деньгами перед использованием реальных. Более рискованные продукты (торговля с плечом) полностью опциональны — продукты накоплений и переводов, описанные здесь, спроектированы так, чтобы основной капитал оставался стабильным. Как и в любом финансовом сервисе, вкладывайте только то, чем можете управлять.", c2h:"Один шаг — и ваши деньги<br>начинают работать", c2p:"Бесплатно. Без обязательных вложений. 2 минуты с телефона.", hint2:"Без обязательств · Отмена в любой момент · От $10", tr1:"Работает с 2018 года", tr2:"Страховой фонд $100M", tr3:"10M+ пользователей", tr4:"Вывод в любой момент", tr5:"От $10", follow:"Мы в соцсетях", disc:"WealthShift является информационным ресурсом. Представленная информация не является финансовым советом или инвестиционной рекомендацией. Финансовые инструменты несут риски. Результаты могут отличаться. Перед началом ознакомьтесь с условиями платформы.", stickycta:"Начать →", stickymeta:"10M+ уже здесь", stickysub:"От $10 · 60 сек регистрация" }
 };
-
 const FALLBACK = 'en';
 function getLang(code){ return T[code] || T[FALLBACK]; }
-
 function applyLang(code){
   const t = getLang(code);
   const fb = T[FALLBACK];
@@ -1073,7 +946,6 @@ function applyLang(code){
   document.documentElement.dir = rtl ? 'rtl' : 'ltr';
   document.documentElement.lang = code;
 }
-
 function setLang(el){
   const code = el.getAttribute('data-code');
   const label = el.getAttribute('data-label');
@@ -1085,8 +957,9 @@ function setLang(el){
   updateURL(code);
   startTypewriter();
   closeLang();
+  /* PIXEL: track language switch */
+  fbTrackCustom('LanguageSwitch', { lang_code: code, lang_label: label });
 }
-
 function updateURL(code){
   try {
     const url = new URL(window.location);
@@ -1098,42 +971,32 @@ function updateURL(code){
     history.replaceState(null, '', url);
   } catch(e) {}
 }
-
 function toggleLang(){ document.getElementById('LS').classList.toggle('open'); }
 function closeLang(){ document.getElementById('LS').classList.remove('open'); }
-
 document.addEventListener('click', e => {
   if (!document.getElementById('LS').contains(e.target)) closeLang();
 });
-
-/* AUTO-DETECT LANGUAGE */
 function detectLang(){
-  // 1. URL query param (?lang=ru) — highest priority, allows shareable language URLs
   try {
     const params = new URLSearchParams(window.location.search);
     const urlLang = params.get('lang');
     if (urlLang && T[urlLang]) return urlLang;
   } catch(e) {}
-  // 2. Previously saved choice
   try {
     const saved = localStorage.getItem('ws_lang');
     if (saved && T[saved]) return saved;
   } catch(e) {}
-  // 3. Browser language
   const nav = (navigator.language || 'en').toLowerCase();
   const base = nav.split('-')[0];
   if (T[base]) return base;
   return 'en';
 }
-
 function initLang(){
   const code = detectLang();
   if (code === 'en') return;
   const opt = document.querySelector('.lang-option[data-code="'+code+'"]');
   if (opt) setLang(opt);
 }
-
-/* PHONE BALANCE ANIMATION — synced ticks with micro-drop visual */
 function animatePhoneBalance(){
   const equityEl = document.getElementById('phEquityNum');
   const accruedEl = document.getElementById('phAccruedNum');
@@ -1141,8 +1004,6 @@ function animatePhoneBalance(){
   const float2El = document.getElementById('float2Num');
   const dropEl = document.querySelector('.ph-microdrop');
   if (!equityEl) return;
-
-  // Balance ~$122K at 15% APY: today ~$50.24, 10-day ~$502.40
   let equity = 122247.83;
   let accrued = 50.24;
   let tenDay = 502.40;
@@ -1156,17 +1017,13 @@ function animatePhoneBalance(){
     accruedEl.textContent = accrued.toFixed(2);
     if (float1El) float1El.textContent = accrued.toFixed(2);
     if (float2El) float2El.textContent = tenDay.toFixed(2);
-
-    // Trigger +$0.01 micro-drop visually synced with this tick
     if (dropEl) {
       dropEl.classList.remove('show');
-      void dropEl.offsetWidth; // force restart of animation
+      void dropEl.offsetWidth;
       dropEl.classList.add('show');
     }
-  }, 2800); // 2.8s tick — clear, slow pulse for synced visual
+  }, 2800);
 }
-
-/* STATS COUNTER ANIMATION */
 function animateCounters(){
   const els = document.querySelectorAll('.stat-num[data-count]');
   const observer = new IntersectionObserver((entries) => {
@@ -1190,8 +1047,6 @@ function animateCounters(){
   }, { threshold: 0.3 });
   els.forEach(el => observer.observe(el));
 }
-
-/* COMPARE CARD ANIMATION */
 function animateCompare(){
   const card = document.querySelector('.compare-card');
   const bankVal = document.getElementById('compValBank');
@@ -1199,8 +1054,8 @@ function animateCompare(){
   const bankBar = document.getElementById('compBarBank');
   const digBar = document.getElementById('compBarDigital');
   if (!card || !bankVal) return;
-  const bankFinal = 1025;     // $1000 × 1.005^5
-  const digFinal = 2011;      // $1000 × 1.15^5
+  const bankFinal = 1025;
+  const digFinal = 2011;
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting || entry.target.dataset.compared) return;
@@ -1221,8 +1076,6 @@ function animateCompare(){
   }, { threshold: 0.4 });
   observer.observe(card);
 }
-
-/* CALCULATOR */
 function fmt(n){ return Math.round(n).toLocaleString('en-US'); }
 function updateCalc(){
   const amount = +document.getElementById('calcAmountSlider').value;
@@ -1238,13 +1091,9 @@ function updateCalc(){
   document.getElementById('calcBarBank').style.width = (bank / max * 100) + '%';
   document.getElementById('calcBarDigital').style.width = '100%';
 }
-
-/* FAQ */
 function toggleFaq(btn){
   btn.closest('.faq-item').classList.toggle('open');
 }
-
-/* TYPEWRITER — cycling phrases on H1 accent */
 const TYPED_PHRASES = {
   en: ['do nothing', 'trust the bank', 'wait too long', 'miss chances'],
   ru: ['просто ждёте', 'верите банку', 'стоите на месте', 'упускаете шанс'],
@@ -1252,7 +1101,7 @@ const TYPED_PHRASES = {
   es: ['no haces nada', 'esperas más', 'confías al banco', 'no actúas'],
   pt: ['não faz nada', 'confia no banco', 'espera demais', 'não age'],
   de: ['nichts tun', 'Bank vertrauen', 'zu lange warten', 'nicht handeln'],
-  fr: ['ne faites rien', 'attendez trop', 'faites confiance', 'n\'agissez pas'],
+  fr: ['ne faites rien', 'attendez trop', 'faites confiance', "n'agissez pas"],
   tr: ['yapmıyorsunuz', 'güveniyorsunuz', 'bekliyorsunuz', 'kaçırıyorsunuz'],
   ar: ['لا تفعل شيئاً', 'تثق بالبنك', 'تنتظر طويلاً', 'تفوّت الفرص'],
   zh: ['什么都不做', '信任银行', '等待太久', '错过机会'],
@@ -1298,46 +1147,33 @@ function startTypewriter(){
   if (!el) return;
   const lang = document.documentElement.lang || 'en';
   const phrases = TYPED_PHRASES[lang] || TYPED_PHRASES.en;
-  // Show first phrase fully typed, pause, then begin cycle
   el.textContent = phrases[0];
   typeCharIdx = phrases[0].length;
   typePhraseIdx = 0;
   typeDeleting = true;
   typeTimer = setTimeout(tickType, 2500);
 }
-
-/* SMOOTH SCROLL — no URL change */
 function scrollToPreview(){
   const el = document.getElementById('preview');
   if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
 }
-
-/* TESTIMONIALS — native scroll with auto-advance (float position) + user swipe */
 function initTestimonials(){
   const mq = document.querySelector('.testimonials-marquee');
   const track = mq?.querySelector('.testimonials-track');
   if (!mq || !track) return;
-
   let paused = false;
   let pauseUntil = 0;
   let lastTime = performance.now();
-  const SPEED = 35; // pixels per second
+  const SPEED = 35;
   let halfWidth = 0;
   let pos = 0;
-
   const recompute = () => { halfWidth = track.scrollWidth / 2; };
   window.addEventListener('resize', recompute, { passive:true });
-
-  // Pause on hover (desktop)
   mq.addEventListener('mouseenter', () => { paused = true; });
   mq.addEventListener('mouseleave', () => { paused = false; pauseUntil = performance.now() + 600; });
-
-  // Pause on touch/swipe (mobile)
   mq.addEventListener('touchstart', () => { paused = true; }, { passive:true });
   mq.addEventListener('touchend', () => { paused = false; pauseUntil = performance.now() + 1200; }, { passive:true });
   mq.addEventListener('touchcancel', () => { paused = false; pauseUntil = performance.now() + 1200; }, { passive:true });
-
-  // Drag with mouse (desktop)
   let isDown = false, startX = 0, startScroll = 0;
   mq.addEventListener('mousedown', (e) => {
     isDown = true; paused = true;
@@ -1351,17 +1187,13 @@ function initTestimonials(){
     if (!isDown) return;
     mq.scrollLeft = startScroll - (e.pageX - startX);
   });
-
   function tick(now){
     if (!halfWidth) recompute();
     const dt = Math.min(0.05, (now - lastTime) / 1000);
     lastTime = now;
-
     if (paused || now <= pauseUntil) {
-      // User is interacting — sync virtual position with actual scroll
       pos = mq.scrollLeft;
     } else {
-      // Auto-advance via float position (avoids sub-pixel rounding)
       pos += SPEED * dt;
       if (halfWidth > 0) {
         if (pos >= halfWidth) pos -= halfWidth;
@@ -1371,15 +1203,11 @@ function initTestimonials(){
     }
     requestAnimationFrame(tick);
   }
-  // Wait for layout/fonts to settle
   setTimeout(() => { recompute(); pos = 0; mq.scrollLeft = 0; requestAnimationFrame(tick); }, 200);
 }
-
-/* SCROLL-REVEAL — fade up sections and cards as they enter viewport */
 function initReveal(){
   const targets = document.querySelectorAll('.compare-card, .b-card, .calc-card, .u-card, .step-item, .faq-item, .testimonials-section .t-header, .cta-section h2, .cta-section > p, .cta-section .cta-group, .trust-row, .social-bar');
   if (!('IntersectionObserver' in window)) {
-    // Fallback: just show everything
     targets.forEach(el => el.classList.add('in'));
     return;
   }
@@ -1393,22 +1221,65 @@ function initReveal(){
   }, { threshold:0.12, rootMargin:'0px 0px -60px 0px' });
   targets.forEach(el => observer.observe(el));
 }
-
-/* STICKY MOBILE CTA */
 function initStickyCta(){
   const sticky = document.getElementById('stickyCta');
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    // Hide when user is in the bottom 600px (covers final CTA + trust + social + footer)
     const atBottom = (window.innerHeight + y) > (document.body.scrollHeight - 600);
     if (y > 500 && !atBottom) sticky.classList.add('show');
     else sticky.classList.remove('show');
   }, { passive:true });
 }
-
-/* INIT */
+/* ===== PIXEL EVENT BINDING — wires up all CTA / social / lang / usage clicks ===== */
+function initPixelTracking(){
+  /* 1. MEXC platform CTAs → Lead (standard) + ClickToPlatform (custom)
+     Catches every <a> that points to promote.mexc.com OR has class .mexc-cta.
+     - Lead = standard Meta event for ad-optimization & lookalike audiences
+     - ClickToPlatform = custom event for fine-grained retargeting / custom audiences
+     data-cta-id distinguishes which button (hero / calc / second / sticky / usage_*) for analysis in Events Manager. */
+  document.querySelectorAll('a[href*="promote.mexc.com"], a.mexc-cta').forEach(link => {
+    link.addEventListener('click', () => {
+      const ctaId = link.dataset.ctaId || 'unknown';
+      const label = (link.textContent || '').trim().slice(0, 60);
+      const lang = document.documentElement.lang || 'en';
+      const payload = { content_name: label, content_category: 'mexc_signup', cta_id: ctaId, lang: lang };
+      fbTrack('Lead', payload);
+      fbTrackCustom('ClickToPlatform', { ...payload, destination: 'mexc' });
+    });
+  });
+  /* 2. Facebook social link → custom 'FollowSocial' event */
+  document.querySelectorAll('a.fb-link, a[data-social="facebook"]').forEach(link => {
+    link.addEventListener('click', () => {
+      fbTrackCustom('FollowSocial', { network: 'facebook', lang: document.documentElement.lang || 'en' });
+    });
+  });
+  /* 3. Language switches — also fired inside setLang() above (covers both paths) */
+  /* 4. Calculator interaction → custom 'CalculatorUsed' event
+     Fires ONCE per page load on first interaction (slider change OR preset click).
+     Captures final amount + years + lang at moment of interaction. */
+  let calcFired = false;
+  function fireCalcEvent(source) {
+    if (calcFired) return;
+    calcFired = true;
+    const amount = +document.getElementById('calcAmountSlider').value;
+    const years = +document.getElementById('calcYearsSlider').value;
+    fbTrackCustom('CalculatorUsed', {
+      amount: amount,
+      years: years,
+      interaction_source: source, // 'slider_amount' | 'slider_years' | 'preset_amount' | 'preset_years'
+      lang: document.documentElement.lang || 'en'
+    });
+  }
+  document.getElementById('calcAmountSlider').addEventListener('change', () => fireCalcEvent('slider_amount'));
+  document.getElementById('calcYearsSlider').addEventListener('change', () => fireCalcEvent('slider_years'));
+  document.querySelectorAll('.calc-preset[data-amount]').forEach(btn => {
+    btn.addEventListener('click', () => fireCalcEvent('preset_amount'));
+  });
+  document.querySelectorAll('.calc-preset[data-years]').forEach(btn => {
+    btn.addEventListener('click', () => fireCalcEvent('preset_years'));
+  });
+}
 document.addEventListener('DOMContentLoaded', () => {
-  // Clear hash on load so reload doesn't jump to anchors like #preview
   if (window.location.hash) {
     history.replaceState(null, '', window.location.pathname + window.location.search);
     window.scrollTo(0, 0);
@@ -1446,6 +1317,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   updateCalc();
   initStickyCta();
+  initPixelTracking();
 });
 </script>
 </body>
