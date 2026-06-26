@@ -1031,8 +1031,8 @@ if (window.location.hash) {
 </div>
 <script>
 /* ===== META PIXEL + CAPI EVENT HELPERS =====
-   fbTrack       — standard Meta events (Lead, PageView, etc.)
-   fbTrackCustom — custom events (ClickToPlatform, FollowSocial, LanguageSwitch, CalculatorUsed)
+   fbTrack       — standard Meta events (PageView, Lead, InitiateCheckout) — available in any campaign objective
+   fbTrackCustom — custom events (FollowSocial, LanguageSwitch, CalculatorUsed) — needs Custom Conversion wrapper to use as goal
    Each helper:
      1. Generates a unique event_id
      2. Fires Pixel with that event_id (4th arg to fbq)
@@ -1445,10 +1445,11 @@ function initStickyCta(){
 }
 /* ===== PIXEL EVENT BINDING — wires up all CTA / social / lang / usage clicks ===== */
 function initPixelTracking(){
-  /* 1. MEXC platform CTAs → Lead (standard) + ClickToPlatform (custom)
+  /* 1. MEXC platform CTAs → Lead (standard) + InitiateCheckout (standard)
      Catches every <a> that points to promote.mexc.com OR has class .mexc-cta.
-     - Lead = standard Meta event for ad-optimization & lookalike audiences
-     - ClickToPlatform = custom event for fine-grained retargeting / custom audiences
+     - Lead = available in Leads campaign objective
+     - InitiateCheckout = available in Sales campaign objective (standard ecommerce event)
+     Both standard events = available everywhere without Custom Conversions setup.
      data-cta-id distinguishes which button (hero / calc / second / sticky / usage_*) for analysis in Events Manager. */
   document.querySelectorAll('a[href*="promote.mexc.com"], a.mexc-cta').forEach(link => {
     link.addEventListener('click', () => {
@@ -1457,7 +1458,7 @@ function initPixelTracking(){
       const lang = document.documentElement.lang || 'en';
       const payload = { content_name: label, content_category: 'mexc_signup', cta_id: ctaId, lang: lang };
       fbTrack('Lead', payload);
-      fbTrackCustom('ClickToPlatform', { ...payload, destination: 'mexc' });
+      fbTrack('InitiateCheckout', { ...payload, destination: 'mexc' });
     });
   });
   /* 2. Facebook social link → custom 'FollowSocial' event */
